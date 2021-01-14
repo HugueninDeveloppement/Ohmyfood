@@ -1,3 +1,19 @@
 ﻿body
 {
 }
+
+/*ol {list-style: none;
+  counter-reset: li;
+}
+
+li::before {content: counter(li);
+  color: red;
+  width: 1em;
+  heigth:1em;
+  background-color:green;
+  margin-left: -1em}
+
+li {counter-increment: li;
+  display:flex;
+  flex-direction:row;
+margin-bottom:0.5em;}*/
