@@ -1,0 +1,16 @@
+.localisation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: gray;
+    height: 50px;
+
+    &__recherche {
+        border:none;
+    }
+
+    &__button {
+        border:none;
+    }
+}

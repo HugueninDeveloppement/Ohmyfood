@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('../police/Shrikhand-Regular.ttf') format('truetype'), url('../police/shrikhand-regular-webfont.woff2') format('woff2'), url('../police/shrikhand-regular-webfont.woff') format('woff');
+}
+
+
+body{
+    font-family:'Roboto','Times New Roman', Times, serif;
+}
+
+.menu__entete__titre {
+    font-family: 'Shrikhand';
+}

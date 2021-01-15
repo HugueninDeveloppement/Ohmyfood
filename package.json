@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "sass": "^1.32.4"
+  },
+  "devDependencies": {},
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    "sass": "sass --watch sass/main.scss:public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/HugueninDeveloppement/Ohmyfood/issues"
   },
-  "homepage": "https://github.com/HugueninDeveloppement/Ohmyfood#readme",
-  "dependencies": {
-    "sass": "^1.32.4"
-  }
+  "homepage": "https://github.com/HugueninDeveloppement/Ohmyfood#readme"
 }

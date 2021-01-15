@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\menu"
+    "\\public",
+    "\\public\\css",
+    "\\sass",
+    "\\sass\\Base",
+    "\\sass\\Composants",
+    "\\sass\\Layouts",
+    "\\sass\\Pages",
+    "\\sass\\Utils"
   ],
-  "SelectedNode": "\\menu\\ALaFrancaise.html",
+  "SelectedNode": "\\public\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }

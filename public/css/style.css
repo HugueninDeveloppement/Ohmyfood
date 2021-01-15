@@ -1,19 +1,47 @@
-﻿body
-{
+body {
+  margin: 0px;
 }
 
-/*ol {list-style: none;
-  counter-reset: li;
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../police/Shrikhand-Regular.ttf") format("truetype"), url("../police/shrikhand-regular-webfont.woff2") format("woff2"), url("../police/shrikhand-regular-webfont.woff") format("woff");
+}
+body {
+  font-family: "Roboto", "Times New Roman", Times, serif;
 }
 
-li::before {content: counter(li);
-  color: red;
-  width: 1em;
-  heigth:1em;
-  background-color:green;
-  margin-left: -1em}
+.menu__entete__titre {
+  font-family: "Shrikhand";
+}
 
-li {counter-increment: li;
-  display:flex;
-  flex-direction:row;
-margin-bottom:0.5em;}*/
+.header {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 1.2em 0em;
+  box-shadow: 0 4px 2px -2px gray;
+}
+.header__logo {
+  width: 30%;
+  height: 22px;
+}
+
+.localisation {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: gray;
+  height: 50px;
+}
+.localisation__recherche {
+  border: none;
+}
+.localisation__button {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
