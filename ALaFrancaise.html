@@ -9,86 +9,144 @@
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header>        
-        <form class="retour_menu" action="index.html">
-               <button class="button_retour"><i class="fas fa-arrow-left"></i></button>
+    <header class="header__menu">
+        <form class="header__formulaire" action="index.html">
+            <button class="header__formulaire__buttonRetour"><i class="fas fa-arrow-left"></i></button>
+            <img class="header__formulaire__logo" src="public/img/logo/ohmyfood.png" alt="Ohmyfood" />
         </form>
-        <img src="public/img/logo/ohmyfood.png" alt="Ohmyfood" />
     </header>
 
     <main>
-        <img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" />
         <div class="menu">
+            <img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
             <div class="menu__entete">
                 <h1 class="menu__entete__titre">A la française</h1>
-                <i class="far fa-heart"></i>
+                <p>
+                    <label class="menu__entete__label">
+                        <input class="menu__entete__checkbox" type="checkbox" id="favori" />
+                        <i id="unchecked" class="far fa-heart" font-weight="lighter"></i>
+                        <i id="checked" class="fas fa-heart"></i>
+                    </label>
+                </p>
             </div>
-            <div class="menu__detail">
-                <ol>
-                    <li class="menu__detail__entree">
-                        <h2>Entrées</h2>
-                        <ul>
-                            <li>
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zestes d'orange</p>
-                                <p>25€</p>
-                            </li>
-                            <li>
-                                <h3>Velouté de légumes d'antan</h3>
-                                <p>Carotte, panais, topinambour</p>
-                                <p>35€</p>
-                            </li>
-                            <li>
-                                <h3>Soupe à l'oignon</h3>
-                                <p>Revisitée</p>
-                                <p>20€</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__detail__plat">
-                        <h2>Plats</h2>
-                        <ul>
-                            <li>
-                                <h3>Coquilles Saint-Jacques</h3>
-                                <p>Accompagnées d'une purée de panais</p>
-                                <p>40€</p>
-                            </li>
-                            <li>
-                                <h3>Magret de canard</h3>
-                                <p>Et parmentier de pommes de terre</p>
-                                <p>35€</p>
-                            </li>
-                            <li>
-                                <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                                <p>Sur son lit de gnocchis aux légumes</p>
-                                <p>44€</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__detail__dessert">
-                        <h2>Desserts</h2>
-                        <ul>
-                            <li>
-                                <h3>Pétales de violettes glacés</h3>
-                                <p>Et purée de noisettes</p>
-                                <p>18€</p>
-                            </li>
-                            <li>
-                                <h3>Fondant au chocolat</h3>
-                                <p>Revisité</p>
-                                <p>22€</p>
-                            </li>
-                            <li>
-                                <h3>Millefeuille croustillant</h3>
-                                <p>Myrtilles et pâte d’amande</p>
-                                <p>23€</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-            <button id="button_commander" name="commander" type="submit"></button>
-        </div>
+            <div class="menu__formulaire">
+                <form method="post" action="validation_menu.php">
+
+                    <fieldset>
+                        Entrées
+                        <hr />
+                        <label>
+                            <input class="menu__formulaire__input" type="checkbox" name="plat_choisi" />
+                            <span class="menu__formulaire__detail">
+                                <b>Tartare de poulpe acidulé</b>
+                                <br />
+                                Aux zestes d'orange
+                            </span>
+                            <span class="menu__formulaire__prix">
+                                25€
+                            </span>
+                            <i class="fas fa-check-circle"></i>
+                        </label>
+                        <label>
+                            <span class="menu__formulaire__detail">
+                                <b>Velouté de légumes d'antan</b>
+                                <br />
+                                Carotte, panais, topinambour
+                            </span>
+                            <span class="menu__formulaire__prix">
+                                35€
+                            </span>
+                            <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                        </label>
+                        <label>
+                            <span class="menu__formulaire__detail">
+                                <b> Soupe à l'oignon</b>
+                                <br />
+                                Revisitée
+                            </span>
+                            <span class="menu__formulaire__prix">
+                                20€
+                            </span>
+                            <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        Plats
+                        <hr />
+                        <label>
+                            <span class="menu__formulaire__detail">
+                                <b> Coquilles Saint-Jacques</b>
+                                <br />
+                                Accompagnées d'une purée de panais
+                            </span>
+                            <span class="menu__formulaire__prix">
+                                40€
+                            </span>
+                            <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                        </label>
+                        <label>
+                            <span class="menu__formulaire__detail">
+                                <b>Magret de canard</b>
+                                <br />
+                                Et parmentier de pommes de terre
+                            </span>
+                            <span class="menu__formulaire__prix">
+                                35€
+                            </span>
+                            <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                        </label>
+                        <label>
+                            <span class="menu__formulaire__detail">
+                                <b>Pigeonneau d’Ille-et-Vilaine</b>
+                                <br />
+                                Sur son lit de gnocchis aux légumes
+                            </span>
+                            <span class="menu__formulaire__prix">
+                                44€
+                            </span>
+                            <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        Desserts<hr />
+                                <label>
+                                    <span class="menu__formulaire__detail">
+                                        <b>Pétales de violettes glacés</b>
+                                        <br />
+                                        Et purée de noisettes
+                                    </span>
+                                    <span class="menu__formulaire__prix">
+                                        18€
+                                    </span>
+                                    <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                                </label>
+                                <label>
+                                    <span class="menu__formulaire__detail">
+                                        <b>Fondant au chocolat</b>
+                                        <br />
+                                        Revisité
+                                    </span>
+                                    <span class="menu__formulaire__prix">
+                                        22€
+                                    </span>
+                                    <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                                </label>
+                                <label>
+                                    <span class="menu__formulaire__detail">
+                                        <b>Millefeuille croustillant</b>
+                                        <br />
+                                        Myrtilles et pâte d’amande
+                                    </span>
+                                    <span class="menu__formulaire__prix">
+                                        23€
+                                    </span>
+                                    <span class="menu__formulaire__icone"><input class="menu__formulaire__icone__choix" type="checkbox" name="plat_choisi" /><i class="fas fa-check-circle"></i></span>
+                                </label>
+                    </fieldset>
+                    <div class="validation_commande">
+                        <button id="button_commander" name="commander" type="submit">commander</button>
+                    </div>
+        </form>
     </main>
 
     <footer>

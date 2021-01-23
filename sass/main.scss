@@ -1,5 +1,10 @@
 @import "./Base/bases";
 @import "./Base/typographie";
-@import "./Utils/variables";
+@import "./Composants/buttons";
 @import "./Layouts/header";
+@import "./Layouts/form";
+@import "./Utils/variables";
+@import "./Utils/mixins";
 @import "./Pages/index";
+@import "./Pages/menu";
+@import "./Pages/contact";

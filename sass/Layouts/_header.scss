@@ -1,15 +1,55 @@
 .header {
-    width: 100%;
-    height: 2em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    padding: 1.2em 0em;
-    box-shadow: 0 4px 2px -2px gray;
+
+    &__principale {
+        width: 100%;
+        height: 2em;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 1em 0em;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
 
     &__logo {
-        width: 30%;
-        height: 22px;
+        width: 40%;
+        height: 26px;
+    }
+
+    &__menu {
+        width: 100%;
+        height: 2em;
+        padding: 1.2em 0em;
+        box-shadow: 0 4px 2px -2px gray;
+        background-color:white;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+
+    &__formulaire {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        padding: 0em 6em 0.3em 1.2em;
+
+
+        &__buttonRetour {
+            border: none;
+            background-color: white;
+
+            > i {
+                font-size: 1.7em;
+            }
+        }
+
+        &__logo {
+            object-fit: cover;
+            width: 70%;
+        }
     }
 }

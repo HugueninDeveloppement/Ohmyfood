@@ -1,0 +1,107 @@
+.menu {
+    position: relative;
+    z-index: 1;
+
+    > img {
+        height: 260px;
+        width: 100%;
+    }
+
+    &__entete {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.2em 3.1em 1em 1.3em;
+        background-color: $background-color;
+        border-radius: 25px 25px 0px 0px;
+        position: relative;
+        top: -35px;
+        z-index: 2;
+
+        &__titre {
+            font-size: 1.4em;
+        }
+
+        &__label {
+
+            @include ajout-favori
+        }
+    }
+
+    &__formulaire {
+        padding: 0.3em;
+        background-color: $background-color;
+        position: relative;
+        top: -35px;
+
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+        }
+
+        hr {
+            width: 10%;
+            background: $tretiary-color;
+            border: none;
+            height: 2px;
+            margin-left: 0em;
+        }
+
+        label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            text-decoration: none;
+            color: black;
+            padding: 0.6em 0em 0.6em 0.5em;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 0.8em;
+            cursor: pointer;
+        }
+
+        &__detail {
+            width: 70%;
+            text-transform: none;
+            text-overflow: ellipsis;
+            overflow:hidden;
+            font-size:1.5em;
+
+            b {
+                white-space: nowrap;
+            }
+        }
+
+        i, input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ i {
+            display: inline-block;
+        }
+
+        input[type="checkbox"]:checked ~ span:first-of-type {
+            width: 55%;
+
+            b {
+            }
+        }
+    }
+
+    .validation_commande {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+        #button_commander {
+            margin: auto;
+            @include button-submit
+        }
+    }
+}

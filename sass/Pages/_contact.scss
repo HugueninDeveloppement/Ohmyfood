@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    .contact {
+        flex: 1;
+        display: flex;
+        background-image: $background-radiant-boby;
+        justify-content: center;
+
+
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding-top: 1.5em;
+            padding-bottom: 4em;
+            flex: 1;
+
+            > div, h1 {
+                flex-grow: 1;
+                width: 80%;
+                font-size: 1.5em;
+            }
+
+            &__label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            > div {
+                textarea {
+                    min-width: 171px;
+                    border-radius: 15px;
+                }
+
+                input {
+                    min-height: 26px;
+                    border-radius: 15px;
+                }                
+            }
+
+
+            .validation_formulaire {
+                @include button-submit;
+                width: 40%;
+            }
+        }
+    }
+
+    footer {
+    }
+}

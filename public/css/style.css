@@ -14,34 +14,386 @@ body {
   font-family: "Shrikhand";
 }
 
-.header {
+.header__principale {
   width: 100%;
   height: 2em;
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  padding: 1.2em 0em;
-  box-shadow: 0 4px 2px -2px gray;
+  padding: 1em 0em;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 .header__logo {
-  width: 30%;
-  height: 22px;
+  width: 40%;
+  height: 26px;
+}
+.header__menu {
+  width: 100%;
+  height: 2em;
+  padding: 1.2em 0em;
+  box-shadow: 0 4px 2px -2px gray;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.header__formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0em 6em 0.3em 1.2em;
+}
+.header__formulaire__buttonRetour {
+  border: none;
+  background-color: white;
+}
+.header__formulaire__buttonRetour > i {
+  font-size: 1.7em;
+}
+.header__formulaire__logo {
+  object-fit: cover;
+  width: 70%;
+}
+
+.button__retour {
+  border: none;
 }
 
 .localisation {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: flex-end;
+  justify-content: stretch;
   width: 100%;
-  background-color: gray;
+  background-color: #f2f2f2;
   height: 50px;
 }
 .localisation__recherche {
   border: none;
+  width: 60%;
+  background-color: #f2f2f2;
 }
 .localisation__button {
   border: none;
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.entreprise__presentation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2em;
+  background-image: -webkit-linear-gradient(white, #F7F4F4);
+}
+.entreprise__presentation h1, .entreprise__presentation p {
+  padding: 0.2em 1em 0.2em 1em;
+}
+.entreprise__presentation h1 {
+  margin: 0.5em 0.2em 0.2em 0.2em;
+}
+.entreprise__presentation p {
+  margin: 0.4em;
+}
+.entreprise__presentation button {
+  width: 60%;
+  font-size: 1em;
+  align-self: center;
+  padding: 1.4em;
+  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin-top: 0.8em;
+}
+.entreprise__fonctionnement {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.entreprise__fonctionnement h1 {
+  justify-self: self-start;
+}
+.entreprise__fonctionnement ol {
+  list-style: none;
+  counter-reset: li;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+.entreprise__fonctionnement li::before {
+  content: counter(li);
+  color: red;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6em;
+  min-height: 1.6em;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+  right: 5%;
+}
+.entreprise__fonctionnement li {
+  counter-increment: li;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7F4F4;
+  border-radius: 15px;
+  padding: 1em 2em 1em 0em;
+  margin-bottom: 0.8em;
+  font-size: 1.6em;
+}
+.restaurant {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #f2f2f2;
+}
+.restaurant h1 {
+  padding-left: 0.9em;
+}
+.restaurant__vignettes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2em;
+}
+.restaurant__vignettes__detail {
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 1em;
+}
+.restaurant__vignettes__detail a {
+  text-decoration: none;
+  color: black;
+}
+.restaurant__vignettes__detail__image {
+  width: 100%;
+  object-fit: cover;
+  height: 160px;
+  position: relative;
+}
+.restaurant__vignettes__detail__image img {
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 25px 25px 0px 0px;
+}
+.restaurant__vignettes__detail__image__new {
+  position: absolute;
+  z-index: 2;
+  left: 72%;
+  top: 10px;
+  width: 20%;
+  height: 15%;
+  min-width: 63px;
+  text-align: center;
+  color: #278870;
+  background-color: #99E2D0;
+}
+.restaurant__vignettes__detail__image__new p {
+  margin: 5%;
+}
+.restaurant__vignettes__detail__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.6em;
+  padding-right: 2.2em;
+}
+.restaurant__vignettes__detail__footer__hearth {
+  font-size: 1.6em;
+  cursor: pointer;
+}
+.restaurant__vignettes__detail__footer__hearth input[type=checkbox], .restaurant__vignettes__detail__footer__hearth #checked {
+  display: none;
+}
+.restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #checked {
+  display: inline-block;
+  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
+  display: none;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+}
+.menu > img {
+  height: 260px;
+  width: 100%;
+}
+.menu__entete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2em 3.1em 1em 1.3em;
+  background-color: #F7F4F4;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  top: -35px;
+  z-index: 2;
+}
+.menu__entete__titre {
+  font-size: 1.4em;
+}
+.menu__entete__label {
+  font-size: 1.6em;
+  cursor: pointer;
+}
+.menu__entete__label input[type=checkbox], .menu__entete__label #checked {
+  display: none;
+}
+.menu__entete__label input[type=checkbox]:checked ~ #checked {
+  display: inline-block;
+  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__entete__label input[type=checkbox]:checked ~ #unchecked {
+  display: none;
+}
+.menu__formulaire {
+  padding: 0.3em;
+  background-color: #F7F4F4;
+  position: relative;
+  top: -35px;
+}
+.menu__formulaire fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.menu__formulaire hr {
+  width: 10%;
+  background: #99E2D0;
+  border: none;
+  height: 2px;
+  margin-left: 0em;
+}
+.menu__formulaire label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  text-decoration: none;
+  color: black;
+  padding: 0.6em 0em 0.6em 0.5em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 0.8em;
+  cursor: pointer;
+}
+.menu__formulaire__detail {
+  width: 70%;
+  text-transform: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+.menu__formulaire__detail b {
+  white-space: nowrap;
+}
+.menu__formulaire i, .menu__formulaire input[type=checkbox] {
+  display: none;
+}
+.menu__formulaire input[type=checkbox]:checked ~ i {
+  display: inline-block;
+}
+.menu__formulaire input[type=checkbox]:checked ~ span:first-of-type {
+  width: 55%;
+}
+.menu .validation_commande {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.menu .validation_commande #button_commander {
+  margin: auto;
+  width: 60%;
+  font-size: 1em;
+  align-self: center;
+  padding: 1.4em;
+  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin-top: 0.8em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+body .contact {
+  flex: 1;
+  display: flex;
+  background-image: -webkit-linear-gradient(white, #F7F4F4);
+  justify-content: center;
+}
+body .contact__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 1.5em;
+  padding-bottom: 4em;
+  flex: 1;
+}
+body .contact__form > div, body .contact__form h1 {
+  flex-grow: 1;
+  width: 80%;
+  font-size: 1.5em;
+}
+body .contact__form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body .contact__form > div textarea {
+  min-width: 171px;
+  border-radius: 15px;
+}
+body .contact__form > div input {
+  min-height: 26px;
+  border-radius: 15px;
+}
+body .contact__form .validation_formulaire {
+  width: 60%;
+  font-size: 1em;
+  align-self: center;
+  padding: 1.4em;
+  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin-top: 0.8em;
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */

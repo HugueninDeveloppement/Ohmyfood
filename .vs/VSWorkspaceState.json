@@ -3,6 +3,7 @@
     "",
     "\\public",
     "\\public\\css",
+    "\\public\\police",
     "\\sass",
     "\\sass\\Base",
     "\\sass\\Composants",
@@ -10,6 +11,6 @@
     "\\sass\\Pages",
     "\\sass\\Utils"
   ],
-  "SelectedNode": "\\public\\css\\style.css",
+  "SelectedNode": "\\sass\\Pages\\_menu.scss",
   "PreviewInSolutionExplorer": false
 }

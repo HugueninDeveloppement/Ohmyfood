@@ -1,0 +1,46 @@
+@mixin ajout-favori {
+    font-size: 1.6em;
+    cursor: pointer;
+
+
+
+    input[type="checkbox"], #checked {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ #checked {
+        display: inline-block;
+        background: $background-radiant-button;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    input[type="checkbox"]:checked ~ #unchecked {
+        display: none;
+    }
+}
+
+@mixin ajout-plat {
+    formulaire {
+        label:hover {
+            &__icone {
+                i {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin button-submit {
+    width: 60%;
+    font-size: 1em;
+    align-self: center;
+    padding: 1.4em;
+    background: $background-radiant-button;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 0.8em;
+}

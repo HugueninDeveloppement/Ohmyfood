@@ -9,19 +9,25 @@
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header>
-        <form class="retour_menu" action="index.html">
-            <button class="button_retour"><i class="fas fa-arrow-left"></i></button>
+    <header class="header__menu">
+        <form class="header__formulaire" action="index.html">
+            <button class="header__formulaire__buttonRetour"><i class="fas fa-arrow-left"></i></button>
+            <img class="header__formulaire__logo"src="public/img/logo/ohmyfood.png" alt="Ohmyfood" />
         </form>
-        <img src="public/img/logo/ohmyfood.png" alt="Ohmyfood" />
     </header>
 
     <main>
-        <img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
         <div class="menu">
+            <img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
             <div class="menu__entete">
                 <h1 class="menu__entete__titre">Le délice des sens</h1>
-                <i class="far fa-heart"></i>
+                <p>   
+                    <label class="menu__entete__label">
+                        <input class="menu__entete__checkbox" type="checkbox" id="favori" />
+                        <i id="unchecked" class="far fa-heart" font-weight="lighter"></i>
+                        <i id="checked" class="fas fa-heart"></i>
+                    </label>
+                </p>                
             </div>
             <div class="menu__detail">
                 <ol>
@@ -32,16 +38,19 @@
                                 <h3>Tartare de thon</h3>
                                 <p>Assaisonné au yuzu</p>
                                 <p>25€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                             <li>
                                 <h3>Bouchée de homard croustillant</h3>
                                 <p>Et sa farandole de petits légumes</p>
                                 <p>35€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                             <li>
                                 <h3>Velouté de cèpes</h3>
                                 <p>Aux truffes</p>
                                 <p>20€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime"class="fas fa-check-circle"></i></div>
                             </li>
                         </ul>
                     </li>
@@ -52,16 +61,19 @@
                                 <h3>Poulet rôti aux herbes de Provence</h3>
                                 <p>Et sa crème de truffe</p>
                                 <p>40€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                             <li>
                                 <h3>Langouste rôtie</h3>
                                 <p>Et ses légumes de saison</p>
                                 <p>35€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                             <li>
                                 <h3>Côte de boeuf Angus</h3>
                                 <p>Et sa purée de panais</p>
                                 <p>44€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                         </ul>
                     </li>
@@ -69,25 +81,32 @@
                         <h2>Desserts</h2>
                         <ul>
                             <li>
-                                <h3>Farandole de desserts</h3>
-                                <p>Du chef</p>
-                                <p>18€</p>
+                                <div class="menu__detail__text">
+                                    <h3>Farandole de desserts</h3>
+                                    <p>Du chef</p>
+                                </div>
+                                <div class="menu__detail__prix">
+                                    <p>18€</p>
+                                </div>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                             <li>
                                 <h3>Crème brulée</h3>
                                 <p>Revisitée</p>
                                 <p>22€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                             <li>
                                 <h3>Tiramisu</h3>
                                 <p>À la noisette</p>
                                 <p>23€</p>
+                                <div class="menu__detail__commande"><i id="choix_anime" class="fas fa-check-circle"></i></div>
                             </li>
                         </ul>
                     </li>
                 </ol>
             </div>
-            <button id="button_commander" name="commander" type="submit"></button>
+            <button id="button_commander" name="commander" type="submit">Commander</button>
         </div>
     </main>
 
