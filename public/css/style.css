@@ -299,7 +299,6 @@ body {
   width: 95%;
   text-decoration: none;
   color: black;
-  padding: 0.6em 0em 0.6em 0.5em;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 0.8em;
@@ -311,15 +310,35 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 1.5em;
-}
-.menu__formulaire__detail b {
   white-space: nowrap;
+  padding: 0.6em 0.2em 0.6em 0.2em;
+  transition: width 2s;
 }
-.menu__formulaire i, .menu__formulaire input[type=checkbox] {
+.menu__formulaire input[type=checkbox] {
   display: none;
 }
-.menu__formulaire input[type=checkbox]:checked ~ i {
-  display: inline-block;
+.menu__formulaire__icone i {
+  opacity: 1;
+  margin: auto;
+}
+.menu__formulaire__icone {
+  display: flex;
+  align-self: stretch;
+  width: 10%;
+  transition: width 2s;
+}
+.menu__formulaire i {
+  color: white;
+  transform: rotate(180deg);
+}
+input[type=checkbox]:checked ~ .menu__formulaire__icone {
+  width: 20%;
+  background-color: #99E2D0;
+  border-radius: 0px 10px 10px 0px;
+}
+input[type=checkbox]:checked ~ .menu__formulaire__icone i {
+  transform: rotate(0deg);
+  opacity: 1;
 }
 .menu__formulaire input[type=checkbox]:checked ~ span:first-of-type {
   width: 55%;
