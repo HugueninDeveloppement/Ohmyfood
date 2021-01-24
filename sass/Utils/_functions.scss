@@ -1,3 +1,25 @@
-/*@function lightness($background-color) {
-    @return lighten();
-}*/
+@keyframes rotateIcone {
+    from {
+        transform: rotate(180deg);
+        opacity: 1;
+        font-size: 1.4em;
+    }
+
+    to {
+        transform: rotate(-360deg);
+        opacity: 1;
+        font-size: 1.4em;
+    }
+
+}
+
+@keyframes fondu{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+

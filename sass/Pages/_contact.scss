@@ -9,6 +9,7 @@ body {
         display: flex;
         background-image: $background-radiant-boby;
         justify-content: center;
+        padding: 1.6em;
 
 
 
@@ -17,9 +18,11 @@ body {
             flex-direction: column;
             text-align: center;
             align-items: center;
-            padding-top: 1.5em;
-            padding-bottom: 4em;
+            padding-top: 1em;
+            padding-bottom: 2em;
             flex: 1;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
             > div, h1 {
                 flex-grow: 1;
@@ -28,28 +31,41 @@ body {
             }
 
             &__label {
-                display: flex;
+                display: inline-flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+
+                label{
+                    width:35%;
+                    text-align:right;
+                }
             }
 
             > div {
-                textarea {
-                    min-width: 171px;
-                    border-radius: 15px;
+                input {
+                    width: 60%;
+                    padding: 0px;
+                    border: 1px solid black;
+                    min-height:20px;
                 }
 
-                input {
-                    min-height: 26px;
-                    border-radius: 15px;
-                }                
+                textarea {
+                    width: 60%;
+                    padding: 0px;
+                    border: 1px solid black;
+                    min-height:70px;
+                }
             }
 
 
             .validation_formulaire {
                 @include button-submit;
                 width: 40%;
+                padding:0.6em;
+                margin-top:1em;
+                height:15%;
+
             }
         }
     }
