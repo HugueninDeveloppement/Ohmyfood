@@ -1,7 +1,7 @@
 $background-color: #F7F4F4;
-$background-color-light: lighten($background-color,10%);
+$background-color-light: lighten($background-color,2%);
 $primary-color: #9356dc;
 $secondary-color: #FF79DA;
 $tretiary-color: #99E2D0;
-$background-radiant-button: -webkit-linear-gradient($primary-color,$secondary-color);
+$background-radiant-button: -webkit-linear-gradient($secondary-color,$primary-color);
 $background-radiant-boby: -webkit-linear-gradient( $background-color-light,$background-color );

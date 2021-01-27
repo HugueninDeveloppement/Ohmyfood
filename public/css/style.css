@@ -1,11 +1,22 @@
 body {
   margin: 0px;
+  height: 100vh;
+  font-family: "roboto";
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("../police/Shrikhand-Regular.ttf") format("truetype"), url("../police/shrikhand-regular-webfont.woff2") format("woff2"), url("../police/shrikhand-regular-webfont.woff") format("woff");
+  src: url("../police/shrikhand/Shrikhand-Regular.ttf") format("truetype"), url("../police/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("../police/shrikhand/shrikhand-regular-webfont.woff") format("woff");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../police/roboto/Roboto-Regular.ttf") format("truetype");
+}
+font-face {
+  font-family: "RobotoThin";
+  src: url("../police/roboto/Roboto-Thin.ttf") format("truetype");
+}
+
 body {
   font-family: "Roboto", "Times New Roman", Times, serif;
 }
@@ -64,6 +75,23 @@ body {
   border: none;
 }
 
+footer {
+  padding: 2em;
+  background-color: #2D2929;
+  color: white;
+}
+footer h1 {
+  font-family: "Shrikhand";
+}
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+footer p a i {
+  padding-right: 0.8em;
+  min-width: 20px;
+}
+
 @keyframes rotateIcone {
   from {
     transform: rotate(180deg);
@@ -109,44 +137,44 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 2em;
-  background-image: -webkit-linear-gradient(white, #F7F4F4);
-}
-.entreprise__presentation h1, .entreprise__presentation p {
-  padding: 0.2em 1em 0.2em 1em;
+  padding: 1em 1.2em 2em 1.2em;
+  background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
 .entreprise__presentation h1 {
-  margin: 0.5em 0.2em 0.2em 0.2em;
+  padding: 0.2em 1.7em 0.2em 1.7em;
+  font-size: 1.5em;
 }
 .entreprise__presentation p {
   margin: 0.4em;
+  font-size: 1.2em;
+  font-family: RobotoThin;
 }
 .entreprise__presentation button {
   width: 60%;
   font-size: 1em;
   align-self: center;
   padding: 1.4em;
-  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
   border: none;
-  border-radius: 25px;
+  border-radius: 35px;
   color: white;
   margin-top: 0.8em;
 }
 .entreprise__fonctionnement {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding-bottom: 2em;
+  padding: 1.6em 1em 2em 1em;
 }
 .entreprise__fonctionnement h1 {
-  justify-self: self-start;
+  padding-left: 1em;
 }
 .entreprise__fonctionnement ol {
   list-style: none;
   counter-reset: li;
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  padding: 1em;
+  text-align: left;
 }
 .entreprise__fonctionnement li::before {
   content: counter(li);
@@ -160,7 +188,7 @@ body {
   border-radius: 50%;
   color: white;
   position: relative;
-  right: 5%;
+  right: 4%;
 }
 .entreprise__fonctionnement li {
   counter-increment: li;
@@ -169,11 +197,29 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #F7F4F4;
-  border-radius: 15px;
-  padding: 1em 2em 1em 0em;
+  border-radius: 35px;
+  padding: 1em 1em 1em 0em;
   margin-bottom: 0.8em;
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
+.entreprise__fonctionnement li i {
+  min-width: 26px;
+  margin-right: 0.5em;
+  margin-left: 0.3em;
+  text-align: center;
+  color: #706666;
+}
+.entreprise__fonctionnement li span {
+  flex: 1;
+  font-size: 0.75em;
+}
+.entreprise__fonctionnement li:hover {
+  background-color: #f2eafb;
+}
+.entreprise__fonctionnement li:hover i {
+  color: #9356dc;
+}
+
 .restaurant {
   width: 100%;
   display: flex;
@@ -181,6 +227,7 @@ body {
   justify-content: space-between;
   align-content: center;
   background-color: #f2f2f2;
+  padding-bottom: 3em;
 }
 .restaurant h1 {
   padding-left: 0.9em;
@@ -194,7 +241,7 @@ body {
 .restaurant__vignettes__detail {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 1em;
+  margin-bottom: 1.7em;
 }
 .restaurant__vignettes__detail a {
   text-decoration: none;
@@ -247,7 +294,7 @@ body {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
-  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -268,8 +315,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2.2em 3.1em 1em 1.3em;
-  background-color: #F7F4F4;
+  padding: 2.2em 2em 1em 1.9em;
+  background: #fbfafa;
   border-radius: 25px 25px 0px 0px;
   position: relative;
   top: -35px;
@@ -289,7 +336,7 @@ body {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
-  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -297,17 +344,19 @@ body {
   display: none;
 }
 .menu__formulaire {
-  padding: 0.3em;
-  background-color: #F7F4F4;
+  padding: 1em;
+  background-color: #fbfafa;
   position: relative;
   top: -35px;
+  display: flex;
+  flex-direction: column;
 }
 .menu__formulaire fieldset {
   border: none;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  width: 100%;
+  margin: auto;
 }
 .menu__formulaire hr {
   width: 10%;
@@ -316,63 +365,87 @@ body {
   height: 2px;
   margin-left: 0em;
 }
-.menu__formulaire label {
+.menu__formulaire .contener_label {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6em;
+}
+.menu__formulaire .contener_label label {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 95%;
-  text-decoration: none;
-  color: black;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-bottom: 0.8em;
-  cursor: pointer;
-  animation: fondu 2s;
-}
-.menu__formulaire__detail {
-  width: 70%;
+  align-items: stretch;
   text-transform: none;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-size: 1.5em;
-  white-space: nowrap;
-  padding: 0.6em 0.2em 0.6em 0.2em;
-  transition: width 2s;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
 }
-.menu__formulaire input[type=checkbox], .menu__formulaire i {
+.menu__formulaire .contener_label label .menu__formulaire__input {
   display: none;
 }
-.menu__formulaire__icone i {
-  color: white;
-  opacity: 0;
-  font-size: 1px;
-}
-.menu__formulaire__icone {
+.menu__formulaire .contener_label label .menu__formulaire__detail {
+  width: 80%;
+  max-width: 20em;
   display: flex;
-  align-self: stretch;
-  width: 7%;
-  transition: width 2s ease-in;
+  flex-direction: column;
+  justify-content: center;
+  transition: width 2s ease-out;
 }
-input[type=checkbox]:checked ~ .menu__formulaire__icone {
-  width: 24%;
+.menu__formulaire .contener_label label .menu__formulaire__detail__texte {
+  font-size: 1.2em;
+  margin: auto 0px auto 0.4em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__formulaire .contener_label label .menu__formulaire__prix {
+  flex: 1;
+  margin-bottom: 0.8em;
   text-align: center;
-  background-color: #99E2D0;
+  font-weight: 900;
+  align-self: flex-end;
+  transition: width 2s ease-out;
+}
+.menu__formulaire .contener_label label .menu__formulaire__icone {
+  height: 100%;
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0px 10px 10px 0px;
+  overflow: hidden;
+  background-color: aquamarine;
+  transition: width 2s ease-out;
 }
-input[type=checkbox]:checked ~ .menu__formulaire__icone i {
-  display: block;
-  margin: auto;
-  animation: rotateIcone 1500ms forwards 500ms;
+.menu__formulaire .contener_label label .menu__formulaire__icone i {
+  color: white;
+  transform: rotate(0deg);
+  transition: transform 2s ease-in-out 500ms;
 }
-.menu__formulaire input[type=checkbox]:checked ~ span:first-of-type {
-  width: 55%;
+.menu__formulaire .contener_label label .menu__formulaire__input:checked ~ label {
+  justify-content: space-between;
+}
+.menu__formulaire .contener_label label .menu__formulaire__input:checked ~ .menu__formulaire__icone {
+  width: 25%;
+}
+.menu__formulaire .contener_label label .menu__formulaire__input:checked ~ .menu__formulaire__icone i {
+  transform: rotate(-360deg);
+}
+.menu__formulaire .contener_label label .menu__formulaire__input:checked ~ .menu__formulaire__detail {
+  width: 65%;
+}
+.menu__formulaire .contener_label label .menu__formulaire__input:checked ~ label .menu__formulaire__prix {
+  max-width: 4em;
 }
 .menu .validation_commande {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  margin-bottom: 1em;
 }
 .menu .validation_commande #button_commander {
   margin: auto;
@@ -380,78 +453,107 @@ input[type=checkbox]:checked ~ .menu__formulaire__icone i {
   font-size: 1em;
   align-self: center;
   padding: 1.4em;
-  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
   border: none;
-  border-radius: 25px;
+  border-radius: 35px;
   color: white;
   margin-top: 0.8em;
 }
 
-body {
+#body_contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
-body .contact {
+#body_contact .contact {
   flex: 1;
   display: flex;
-  background-image: -webkit-linear-gradient(white, #F7F4F4);
   justify-content: center;
   padding: 1.6em;
 }
-body .contact__form {
+#body_contact .contact__form {
   display: flex;
   flex-direction: column;
+  background-color: white;
   text-align: center;
   align-items: center;
-  padding-top: 1em;
   padding-bottom: 2em;
   flex: 1;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-body .contact__form > div, body .contact__form h1 {
+#body_contact .contact__form > div {
+  font-family: "Shrikhand";
   flex-grow: 1;
   width: 80%;
   font-size: 1.5em;
 }
-body .contact__form__label {
+#body_contact .contact__form h1 {
+  font-family: "Shrikhand";
+  font-size: 1.4em;
+  border-bottom: 4px solid #F7F4F4;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 1em;
+  padding: 1.3em 0em 1em 0em;
+  border-radius: 25px 25px 0px 0px;
+}
+#body_contact .contact__form__label {
   display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1.2em;
+  padding-left: 2em;
 }
-body .contact__form__label label {
-  width: 35%;
-  text-align: right;
+#body_contact .contact__form__label label {
+  text-align: left;
 }
-body .contact__form > div input {
-  width: 60%;
+#body_contact .contact__form > div input {
+  width: 80%;
   padding: 0px;
   border: 1px solid black;
   min-height: 20px;
 }
-body .contact__form > div textarea {
-  width: 60%;
+#body_contact .contact__form > div textarea {
+  width: 80%;
   padding: 0px;
   border: 1px solid black;
-  min-height: 70px;
+  min-height: 90px;
 }
-body .contact__form .validation_formulaire {
+#body_contact .contact__form > div hr {
+  width: 24%;
+  background: #99E2D0;
+  border: none;
+  height: 2px;
+  margin: 0em 0em 0.3em 0em;
+}
+#body_contact .contact__form > div .message ~ hr {
+  width: 39%;
+}
+#body_contact .contact__form > div input:focus {
+  background-color: #f2eafb;
+}
+#body_contact .contact__form > div textarea:focus {
+  background-color: #f2eafb;
+}
+#body_contact .contact__form .validation_formulaire {
   width: 60%;
   font-size: 1em;
   align-self: center;
   padding: 1.4em;
-  background: -webkit-linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-linear-gradient(#FF79DA, #9356dc);
   border: none;
-  border-radius: 25px;
+  border-radius: 35px;
   color: white;
   margin-top: 0.8em;
   width: 40%;
   padding: 0.6em;
   margin-top: 1em;
   height: 15%;
+}
+#body_contact #footer_contact {
+  position: relative;
+  bottom: -35px;
 }
 
 /*# sourceMappingURL=style.css.map */

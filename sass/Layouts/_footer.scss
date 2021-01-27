@@ -1,0 +1,23 @@
+footer {
+    padding: 2em;
+    background-color: #2D2929;
+    color: white;
+
+
+    h1 {
+        font-family: 'Shrikhand';
+    }
+
+    p {
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            i {
+                padding-right: 0.8em;
+                min-width:20px;
+            }
+        }
+    }
+}

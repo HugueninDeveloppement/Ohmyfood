@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/css/style.css">
     <title>Ohmyfood</title>
 </head>
-<body>
+<body id="body_contact">
     <header class="header__menu">
         <form class="header__formulaire" action="index.html">
             <button class="header__formulaire__buttonRetour"><i class="fas fa-arrow-left"></i></button>
@@ -21,21 +21,24 @@
             <h1 class="contact__form__header">Nous contacter</h1>
             <div class="contact__form__label">
                 <label for="contact-name">name</label>
+                <hr />
                 <input type="text" name="contact-name" id="contact-name" autocomplete="name">
             </div>
             <div class="contact__form__label">
                 <label for="contact-email">email</label>
+                <hr />
                 <input type="email" name="contact-email" id="contact-email" autocomplete="email">
             </div>
             <div class="contact__form__label">
-                <label for="contact-message">message</label>
+                <label class="message" for="contact-message">message</label>
+                <hr />
                 <textarea name="contact-message" id="contact-message"></textarea>
             </div>
             <button class="validation_formulaire">Envoyer</button>
         </form>
     </main>
 
-    <footer>
+    <footer id="footer_contact">
         <h1>ohmyfood</h1>
         <p><a href=""><i class="fas fa-utensils"></i> Propsoser un restaurant</a></p>
         <p><a href=""><i class="fas fa-hands-helping"></i> Propsoser un restaurant</a></p>

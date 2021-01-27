@@ -1,6 +1,16 @@
 @font-face {
     font-family: 'Shrikhand';
-    src: url('../police/Shrikhand-Regular.ttf') format('truetype'), url('../police/shrikhand-regular-webfont.woff2') format('woff2'), url('../police/shrikhand-regular-webfont.woff') format('woff');
+    src: url('../police/shrikhand/Shrikhand-Regular.ttf') format('truetype'), url('../police/shrikhand/shrikhand-regular-webfont.woff2') format('woff2'), url('../police/shrikhand/shrikhand-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../police/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+font-face {
+    font-family: 'RobotoThin';
+    src: url('../police/roboto/Roboto-Thin.ttf') format('truetype');
 }
 
 
