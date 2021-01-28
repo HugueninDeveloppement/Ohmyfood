@@ -1,7 +1,12 @@
 body {
   margin: 0px;
-  height: 100vh;
   font-family: "roboto";
+  position: relative;
+}
+@media (min-width: 767px) {
+  body {
+    font-size: 1.6em;
+  }
 }
 
 @font-face {
@@ -34,13 +39,24 @@ body {
   justify-content: center;
   align-content: center;
   padding: 1em 0em;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 3;
 }
+@media (min-width: 767px) {
+  .header__principale {
+    height: 4em;
+    padding: 0.2em 0em;
+  }
+}
 .header__logo {
-  width: 40%;
   height: 26px;
+}
+@media (min-width: 767px) {
+  .header__logo {
+    height: 70%;
+    margin: auto;
+  }
 }
 .header__menu {
   width: 100%;
@@ -48,27 +64,50 @@ body {
   padding: 1.2em 0em;
   box-shadow: 0 4px 2px -2px gray;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 4;
+}
+@media (min-width: 767px) {
+  .header__menu {
+    height: 3.2em;
+    padding: 0.5em 0em 0em 0em;
+  }
 }
 .header__formulaire {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 0em 6em 0.3em 1.2em;
+}
+@media (min-width: 767px) {
+  .header__formulaire {
+    padding: 0.6em 4em 0.3em 1.2em;
+  }
 }
 .header__formulaire__buttonRetour {
   border: none;
+  height: 30px;
   background-color: white;
 }
 .header__formulaire__buttonRetour > i {
   font-size: 1.7em;
 }
+@media (min-width: 767px) {
+  .header__formulaire__buttonRetour > i {
+    font-size: 2.1em;
+  }
+}
 .header__formulaire__logo {
-  object-fit: cover;
-  width: 70%;
+  width: 183px;
+}
+@media (min-width: 767px) {
+  .header__formulaire__logo {
+    height: 40px;
+    width: 300px;
+    margin: auto;
+  }
 }
 
 .button__retour {
@@ -79,6 +118,11 @@ footer {
   padding: 2em;
   background-color: #2D2929;
   color: white;
+}
+@media (min-width: 767px) {
+  footer {
+    margin-left: 41%;
+  }
 }
 footer h1 {
   font-family: "Shrikhand";
@@ -112,7 +156,22 @@ footer p a i {
     opacity: 1;
   }
 }
-.localisation {
+@media (min-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 4em;
+  }
+}
+@media (min-width: 767px) {
+  main .aside_desktop {
+    width: 40%;
+    background-color: #F7F4F4;
+    position: fixed;
+  }
+}
+main .aside_desktop .localisation {
   display: flex;
   flex-direction: row-reverse;
   justify-content: stretch;
@@ -120,36 +179,77 @@ footer p a i {
   background-color: #f2f2f2;
   height: 50px;
 }
-.localisation__recherche {
+@media (min-width: 767px) {
+  main .aside_desktop .localisation {
+    height: 100px;
+    justify-content: space-evenly;
+  }
+}
+main .aside_desktop .localisation__recherche {
   border: none;
   width: 60%;
   background-color: #f2f2f2;
 }
-.localisation__button {
+@media (min-width: 767px) {
+  main .aside_desktop .localisation__recherche {
+    font-size: 1.2em;
+    padding-top: 0.3em;
+    width: 70%;
+  }
+}
+main .aside_desktop .localisation__button {
   border: none;
   width: 25%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
-.entreprise__presentation {
+@media (min-width: 767px) {
+  main .aside_desktop .localisation__button {
+    justify-content: flex-start;
+    width: 12%;
+  }
+}
+@media (min-width: 767px) {
+  main .aside_desktop .localisation__button i {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.75em;
+  }
+}
+main .aside_desktop .entreprise__presentation {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 1em 1.2em 2em 1.2em;
   background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
-.entreprise__presentation h1 {
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise__presentation {
+    padding: 0em 0.2em;
+  }
+}
+main .aside_desktop .entreprise__presentation h1 {
   padding: 0.2em 1.7em 0.2em 1.7em;
   font-size: 1.5em;
 }
-.entreprise__presentation p {
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise__presentation h1 {
+    padding: 0em 0.2em;
+  }
+}
+main .aside_desktop .entreprise__presentation p {
   margin: 0.4em;
   font-size: 1.2em;
   font-family: RobotoThin;
 }
-.entreprise__presentation button {
+main .aside_desktop .entreprise__presentation button {
   width: 60%;
   font-size: 1em;
   align-self: center;
@@ -160,15 +260,34 @@ footer p a i {
   color: white;
   margin-top: 0.8em;
 }
-.entreprise__fonctionnement {
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise__presentation button {
+    width: 80%;
+    padding: 1em 0.2em;
+    margin-bottom: 1.5em;
+  }
+}
+main .aside_desktop .entreprise__fonctionnement {
   display: flex;
   flex-direction: column;
   padding: 1.6em 1em 2em 1em;
 }
-.entreprise__fonctionnement h1 {
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise__fonctionnement {
+    padding: 1em 0.2em;
+    background-color: white;
+    align-self: stretch;
+  }
+}
+main .aside_desktop .entreprise__fonctionnement h1 {
   padding-left: 1em;
 }
-.entreprise__fonctionnement ol {
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise__fonctionnement h1 {
+    margin: 0.3em 0em;
+  }
+}
+main .aside_desktop .entreprise__fonctionnement ol {
   list-style: none;
   counter-reset: li;
   display: flex;
@@ -176,7 +295,12 @@ footer p a i {
   padding: 1em;
   text-align: left;
 }
-.entreprise__fonctionnement li::before {
+@media (min-width: 767px) {
+  main .aside_desktop .entreprise__fonctionnement ol {
+    margin-top: 0px;
+  }
+}
+main .aside_desktop .entreprise__fonctionnement li::before {
   content: counter(li);
   color: red;
   display: inline-flex;
@@ -190,7 +314,7 @@ footer p a i {
   position: relative;
   right: 4%;
 }
-.entreprise__fonctionnement li {
+main .aside_desktop .entreprise__fonctionnement li {
   counter-increment: li;
   display: flex;
   flex-direction: row;
@@ -202,25 +326,24 @@ footer p a i {
   margin-bottom: 0.8em;
   font-size: 1.5em;
 }
-.entreprise__fonctionnement li i {
+main .aside_desktop .entreprise__fonctionnement li i {
   min-width: 26px;
   margin-right: 0.5em;
   margin-left: 0.3em;
   text-align: center;
   color: #706666;
 }
-.entreprise__fonctionnement li span {
+main .aside_desktop .entreprise__fonctionnement li span {
   flex: 1;
   font-size: 0.75em;
 }
-.entreprise__fonctionnement li:hover {
+main .aside_desktop .entreprise__fonctionnement li:hover {
   background-color: #f2eafb;
 }
-.entreprise__fonctionnement li:hover i {
+main .aside_desktop .entreprise__fonctionnement li:hover i {
   color: #9356dc;
 }
-
-.restaurant {
+main .contener_restaurant {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -229,38 +352,60 @@ footer p a i {
   background-color: #f2f2f2;
   padding-bottom: 3em;
 }
-.restaurant h1 {
+@media (min-width: 767px) {
+  main .contener_restaurant {
+    margin-left: 40%;
+    padding-bottom: 0em;
+  }
+}
+main .contener_restaurant .restaurant h1 {
   padding-left: 0.9em;
 }
-.restaurant__vignettes {
+main .contener_restaurant .restaurant__vignettes {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1.2em;
 }
-.restaurant__vignettes__detail {
+@media (min-width: 767px) {
+  main .contener_restaurant .restaurant__vignettes {
+    padding-bottom: 0.2em;
+    font-size: 0.8em;
+  }
+}
+main .contener_restaurant .restaurant__vignettes__detail {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 1.7em;
 }
-.restaurant__vignettes__detail a {
+main .contener_restaurant .restaurant__vignettes__detail a {
   text-decoration: none;
   color: black;
 }
-.restaurant__vignettes__detail__image {
+main .contener_restaurant .restaurant__vignettes__detail__image {
   width: 100%;
   object-fit: cover;
   height: 160px;
   position: relative;
 }
-.restaurant__vignettes__detail__image img {
+@media (min-width: 767px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image {
+    height: 240px;
+  }
+}
+main .contener_restaurant .restaurant__vignettes__detail__image img {
   width: 100%;
   height: 160px;
   position: absolute;
   z-index: 1;
   border-radius: 25px 25px 0px 0px;
 }
-.restaurant__vignettes__detail__image__new {
+@media (min-width: 767px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image img {
+    height: 240px;
+  }
+}
+main .contener_restaurant .restaurant__vignettes__detail__image__new {
   position: absolute;
   z-index: 2;
   left: 72%;
@@ -272,10 +417,23 @@ footer p a i {
   color: #278870;
   background-color: #99E2D0;
 }
-.restaurant__vignettes__detail__image__new p {
+@media (min-width: 767px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image__new {
+    top: 30px;
+    width: 28%;
+    height: 22%;
+    left: 64%;
+  }
+}
+main .contener_restaurant .restaurant__vignettes__detail__image__new p {
   margin: 5%;
 }
-.restaurant__vignettes__detail__footer {
+@media (min-width: 767px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image__new p {
+    margin: 12%;
+  }
+}
+main .contener_restaurant .restaurant__vignettes__detail__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -283,14 +441,22 @@ footer p a i {
   padding-left: 1.6em;
   padding-right: 2.2em;
 }
-.restaurant__vignettes__detail__footer__hearth {
+@media (min-width: 767px) {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text h2 {
+    margin: 0.3em 0em 0.3em 0em;
+  }
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text p {
+    margin: 0.3em 0em 0.3em 0em;
+  }
+}
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
   font-size: 1.8em;
   cursor: pointer;
 }
-.restaurant__vignettes__detail__footer__hearth input[type=checkbox], .restaurant__vignettes__detail__footer__hearth #checked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox], main .contener_restaurant .restaurant__vignettes__detail__footer__hearth #checked {
   display: none;
 }
-.restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #checked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #checked {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
@@ -298,17 +464,55 @@ footer p a i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
   display: none;
+}
+
+@media (min-width: 767px) {
+  #main_menu {
+    margin-top: 90px;
+  }
+}
+
+#aside_menu {
+  display: none;
+}
+@media (min-width: 767px) {
+  #aside_menu {
+    display: block;
+    background-color: none;
+  }
+}
+@media (min-width: 767px) {
+  #aside_menu .entreprise__fonctionnement {
+    font-size: 0.8em;
+  }
+  #aside_menu .entreprise__fonctionnement h1 {
+    font-size: 1.1em;
+  }
 }
 
 .menu {
   position: relative;
   z-index: 1;
+  background: #fbfafa;
+  padding-top: 2em;
+}
+@media (min-width: 767px) {
+  .menu {
+    width: 58%;
+    margin-left: 41%;
+    padding-top: 0px;
+  }
 }
 .menu > img {
   height: 260px;
   width: 100%;
+}
+@media (min-width: 767px) {
+  .menu > img {
+    height: 300px;
+  }
 }
 .menu__entete {
   display: flex;
@@ -316,8 +520,8 @@ footer p a i {
   align-items: center;
   justify-content: space-between;
   padding: 2.2em 2em 1em 1.9em;
-  background: #fbfafa;
   border-radius: 25px 25px 0px 0px;
+  background: #fbfafa;
   position: relative;
   top: -35px;
   z-index: 2;
@@ -388,7 +592,7 @@ footer p a i {
 }
 .menu__formulaire .contener_label label .menu__formulaire__detail {
   width: 80%;
-  max-width: 20em;
+  max-width: 12em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -444,6 +648,7 @@ footer p a i {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: 1.1em;
   align-content: center;
   margin-bottom: 1em;
 }
@@ -466,11 +671,18 @@ footer p a i {
   justify-content: space-between;
   background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
+@media (min-width: 767px) {
+  #body_contact #main_contact {
+    background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
+    width: 100%;
+  }
+}
 #body_contact .contact {
   flex: 1;
   display: flex;
   justify-content: center;
   padding: 1.6em;
+  margin-top: 70.4px;
 }
 #body_contact .contact__form {
   display: flex;
@@ -483,11 +695,22 @@ footer p a i {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+@media (min-width: 767px) {
+  #body_contact .contact__form {
+    flex: none;
+    width: 60%;
+  }
+}
 #body_contact .contact__form > div {
   font-family: "Shrikhand";
   flex-grow: 1;
   width: 80%;
   font-size: 1.5em;
+}
+@media (min-width: 767px) {
+  #body_contact .contact__form > div {
+    width: 80%;
+  }
 }
 #body_contact .contact__form h1 {
   font-family: "Shrikhand";
@@ -508,11 +731,21 @@ footer p a i {
 #body_contact .contact__form__label label {
   text-align: left;
 }
+#body_contact .contact__form__label label i {
+  color: #99E2D0;
+  padding-right: 0.5em;
+}
 #body_contact .contact__form > div input {
   width: 80%;
   padding: 0px;
   border: 1px solid black;
   min-height: 20px;
+}
+@media (min-width: 767px) {
+  #body_contact .contact__form > div input {
+    height: 50px;
+    font-size: 0.75em;
+  }
 }
 #body_contact .contact__form > div textarea {
   width: 80%;
@@ -520,15 +753,22 @@ footer p a i {
   border: 1px solid black;
   min-height: 90px;
 }
+@media (min-width: 767px) {
+  #body_contact .contact__form > div textarea {
+    height: 50px;
+    font-size: 0.75em;
+    min-height: 150px;
+  }
+}
 #body_contact .contact__form > div hr {
-  width: 24%;
+  width: 37%;
   background: #99E2D0;
   border: none;
   height: 2px;
   margin: 0em 0em 0.3em 0em;
 }
 #body_contact .contact__form > div .message ~ hr {
-  width: 39%;
+  width: 53%;
 }
 #body_contact .contact__form > div input:focus {
   background-color: #f2eafb;
@@ -554,6 +794,12 @@ footer p a i {
 #body_contact #footer_contact {
   position: relative;
   bottom: -35px;
+}
+@media (min-width: 767px) {
+  #body_contact #footer_contact {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

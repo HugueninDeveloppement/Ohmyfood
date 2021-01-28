@@ -3,6 +3,10 @@ footer {
     background-color: #2D2929;
     color: white;
 
+    @media (min-width: 767px) {
+        margin-left:41%;
+    }
+
 
     h1 {
         font-family: 'Shrikhand';
@@ -16,7 +20,7 @@ footer {
 
             i {
                 padding-right: 0.8em;
-                min-width:20px;
+                min-width: 20px;
             }
         }
     }

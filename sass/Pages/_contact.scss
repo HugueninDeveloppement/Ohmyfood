@@ -4,11 +4,20 @@
     justify-content: space-between;
     background-image: $background-radiant-boby;
 
+    #main_contact {
+        @media (min-width: 767px) {
+            background-image: $background-radiant-boby;
+            width: 100%;
+        }
+    }
+
+
     .contact {
         flex: 1;
         display: flex;
         justify-content: center;
         padding: 1.6em;
+        margin-top: 70.4px;
 
 
         &__form {
@@ -22,11 +31,20 @@
             border-radius: 25px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+            @media (min-width: 767px) {
+                flex: none;
+                width: 60%;
+            }
+
             > div {
                 font-family: 'Shrikhand';
                 flex-grow: 1;
                 width: 80%;
                 font-size: 1.5em;
+
+                @media (min-width: 767px) {
+                    width: 80%;
+                }
             }
 
             h1 {
@@ -35,7 +53,7 @@
                 border-bottom: 4px solid $background-color;
                 width: 100%;
                 margin: 0px;
-                margin-bottom:1em;
+                margin-bottom: 1em;
                 padding: 1.3em 0em 1em 0em;
                 border-radius: 25px 25px 0px 0px;
             }
@@ -45,10 +63,16 @@
                 flex-direction: column;
                 margin-bottom: 1.2em;
                 padding-left: 2em;
-                
+
+
 
                 label {
                     text-align: left;
+
+                    i {
+                        color: $tretiary-color;
+                        padding-right: 0.5em;
+                    }
                 }
             }
 
@@ -58,17 +82,30 @@
                     padding: 0px;
                     border: 1px solid black;
                     min-height: 20px;
+
+
+                    @media (min-width: 767px) {
+                        height: 50px;
+                        font-size: 0.75em;
+                    }
                 }
+
 
                 textarea {
                     width: 80%;
                     padding: 0px;
                     border: 1px solid black;
                     min-height: 90px;
+
+                    @media (min-width: 767px) {
+                        height: 50px;
+                        font-size: 0.75em;
+                        min-height: 150px;
+                    }
                 }
 
                 hr {
-                    width: 24%;
+                    width: 37%;
                     background: $tretiary-color;
                     border: none;
                     height: 2px;
@@ -76,7 +113,7 @@
                 }
 
                 .message ~ hr {
-                    width: 39%
+                    width: 53%
                 }
 
 
@@ -103,5 +140,10 @@
     #footer_contact {
         position: relative;
         bottom: -35px;
+
+        @media (min-width: 767px) {
+            width: 100%;
+            margin-left: 0px;
+        }
     }
 }

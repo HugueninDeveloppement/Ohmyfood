@@ -1,5 +1,9 @@
-body{
-    margin:0px;
-    height:100vh;
-    font-family:'roboto';
+body {
+    margin: 0px;
+    font-family: 'roboto';
+    position:relative;
+
+    @media (min-width: 767px) {
+        font-size: 1.6em;
+    }
 }

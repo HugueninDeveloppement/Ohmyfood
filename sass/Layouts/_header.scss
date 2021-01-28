@@ -9,14 +9,23 @@
         justify-content: center;
         align-content: center;
         padding: 1em 0em;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 3;
+
+        @media (min-width: 767px) {
+            height: 4em;
+            padding: 0.2em 0em;
+        }
     }
 
     &__logo {
-        width: 40%;
         height: 26px;
+
+        @media (min-width: 767px) {
+            height: 70%;
+            margin: auto;
+        }
     }
 
     &__menu {
@@ -24,32 +33,53 @@
         height: 2em;
         padding: 1.2em 0em;
         box-shadow: 0 4px 2px -2px gray;
-        background-color:white;
-        position: sticky;
+        background-color: white;
+        position: fixed;
         top: 0;
-        z-index: 3;
+        z-index: 4;
+
+        @media (min-width: 767px) {
+            height: 3.2em;
+            padding: 0.5em 0em 0em 0em;
+        }
     }
 
     &__formulaire {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-content: center;
+        align-items: center;
         padding: 0em 6em 0.3em 1.2em;
+
+        @media (min-width: 767px) {
+            padding: 0.6em 4em 0.3em 1.2em;
+        }
+
+
 
 
         &__buttonRetour {
             border: none;
+            height: 30px;
             background-color: white;
 
             > i {
                 font-size: 1.7em;
+
+                @media (min-width: 767px) {
+                    font-size: 2.1em;
+                }
             }
         }
 
         &__logo {
-            object-fit: cover;
-            width: 70%;
+            width:183px;
+
+            @media (min-width: 767px) {
+                height: 40px;
+                width:300px;
+                margin: auto;
+            }
         }
     }
 }
