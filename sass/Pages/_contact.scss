@@ -1,7 +1,4 @@
 #body_contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-image: $background-radiant-boby;
 
     #main_contact {
@@ -33,7 +30,7 @@
 
             @media (min-width: 767px) {
                 flex: none;
-                width: 60%;
+                width: 70%;
             }
 
             > div {

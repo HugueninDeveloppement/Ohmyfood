@@ -503,6 +503,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     width: 58%;
     margin-left: 41%;
     padding-top: 0px;
+    font-size: 0.75em;
   }
 }
 .menu > img {
@@ -598,6 +599,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   justify-content: center;
   transition: width 2s ease-out;
 }
+@media (min-width: 767px) {
+  .menu__formulaire .contener_label label .menu__formulaire__detail {
+    max-width: 16em;
+  }
+}
 .menu__formulaire .contener_label label .menu__formulaire__detail__texte {
   font-size: 1.2em;
   margin: auto 0px auto 0.4em;
@@ -666,9 +672,6 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 }
 
 #body_contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
 @media (min-width: 767px) {
@@ -698,7 +701,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 @media (min-width: 767px) {
   #body_contact .contact__form {
     flex: none;
-    width: 60%;
+    width: 70%;
   }
 }
 #body_contact .contact__form > div {
