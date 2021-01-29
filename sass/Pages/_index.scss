@@ -14,6 +14,16 @@ main {
             position: fixed;
         }
 
+        @media (min-width: 979px) {
+            width: 32.5%;
+        }
+
+        @media (min-width: 1099px) {
+            position: relative;
+            width: 25%;
+            font-size: 0.8em;
+        }
+
 
 
         .localisation {
@@ -206,16 +216,26 @@ main {
             padding-bottom: 0em;
         }
 
+        @media (min-width: 979px) {
+            margin-left: 32.5%;
+        }
+
+        @media (min-width: 1099px) {
+            margin-left: 0px;
+            width: 75%;
+        }
+
 
 
         .restaurant {
-            @media (min-width: 769px) and (max-width: 979px) {
-                display:flex;
-                justify-content:space-between;
-            }
+
 
             h1 {
                 padding-left: 0.9em;
+
+                @media (min-width: 979px) {
+                    text-align: center;
+                }
             }
 
             &__vignettes {
@@ -230,10 +250,21 @@ main {
                     font-size: 0.8em;
                 }
 
+                @media (min-width: 979px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 0.5em;
+                }
+
                 &__detail {
                     border-radius: 25px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     margin-bottom: 1.7em;
+
+                    @media (min-width: 979px) {
+                        width: 49%;
+                    }
 
                     a {
                         text-decoration: none;
@@ -250,6 +281,10 @@ main {
                             height: 240px;
                         }
 
+                        @media (min-width: 979px) {
+                            height: 210px;
+                        }
+
 
                         img {
                             width: 100%;
@@ -260,6 +295,10 @@ main {
 
                             @media (min-width: 767px) {
                                 height: 240px;
+                            }
+
+                            @media (min-width: 979px) {
+                                height: 210px;
                             }
                         }
 
@@ -282,11 +321,20 @@ main {
                                 left: 64%;
                             }
 
+                            @media (min-width: 979px) {
+                                width: 30%;
+                                left: 68%;
+                            }
+
                             p {
                                 margin: 5%;
 
                                 @media (min-width: 767px) {
                                     margin: 12%;
+                                }
+
+                                @media (min-width: 979px) {
+                                    margin: 9%;
                                 }
                             }
                         }
@@ -299,6 +347,10 @@ main {
                         align-items: center;
                         padding-left: 1.6em;
                         padding-right: 2.2em;
+
+                        @media (min-width: 979px) {
+                            font-size: 0.8em;
+                        }
 
                         @media (min-width: 767px) {
                             &__text {
@@ -314,7 +366,11 @@ main {
 
                         &__hearth {
 
-                            @include ajout-favori
+                            @include ajout-favori;
+
+                            @media (min-width: 979px) {
+                                font-size: 1.6em;
+                            }
                         }
                     }
                 }

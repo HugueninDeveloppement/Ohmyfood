@@ -4,7 +4,11 @@ footer {
     color: white;
 
     @media (min-width: 767px) {
-        margin-left:40.5%;
+        margin-left: 40.5%;
+    }
+
+    @media (min-width: 979px) {
+        margin-left: 32.5%;
     }
 
 

@@ -124,6 +124,11 @@ footer {
     margin-left: 40.5%;
   }
 }
+@media (min-width: 979px) {
+  footer {
+    margin-left: 32.5%;
+  }
+}
 footer h1 {
   font-family: "Shrikhand";
 }
@@ -177,6 +182,18 @@ footer p a i {
     width: 40.5%;
     background-color: #F7F4F4;
     position: fixed;
+  }
+}
+@media (min-width: 979px) {
+  main .aside_desktop {
+    width: 32.5%;
+  }
+}
+@media (min-width: 1099px) {
+  main .aside_desktop {
+    position: relative;
+    width: 25%;
+    font-size: 0.8em;
   }
 }
 main .aside_desktop .localisation {
@@ -366,14 +383,24 @@ main .contener_restaurant {
     padding-bottom: 0em;
   }
 }
-@media (min-width: 769px) and (max-width: 979px) {
-  main .contener_restaurant .restaurant {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 979px) {
+  main .contener_restaurant {
+    margin-left: 32.5%;
+  }
+}
+@media (min-width: 1099px) {
+  main .contener_restaurant {
+    margin-left: 0px;
+    width: 75%;
   }
 }
 main .contener_restaurant .restaurant h1 {
   padding-left: 0.9em;
+}
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant h1 {
+    text-align: center;
+  }
 }
 main .contener_restaurant .restaurant__vignettes {
   display: flex;
@@ -387,10 +414,23 @@ main .contener_restaurant .restaurant__vignettes {
     font-size: 0.8em;
   }
 }
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em;
+  }
+}
 main .contener_restaurant .restaurant__vignettes__detail {
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 1.7em;
+}
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail {
+    width: 49%;
+  }
 }
 main .contener_restaurant .restaurant__vignettes__detail a {
   text-decoration: none;
@@ -407,6 +447,11 @@ main .contener_restaurant .restaurant__vignettes__detail__image {
     height: 240px;
   }
 }
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image {
+    height: 210px;
+  }
+}
 main .contener_restaurant .restaurant__vignettes__detail__image img {
   width: 100%;
   height: 160px;
@@ -417,6 +462,11 @@ main .contener_restaurant .restaurant__vignettes__detail__image img {
 @media (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__image img {
     height: 240px;
+  }
+}
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image img {
+    height: 210px;
   }
 }
 main .contener_restaurant .restaurant__vignettes__detail__image__new {
@@ -439,12 +489,23 @@ main .contener_restaurant .restaurant__vignettes__detail__image__new {
     left: 64%;
   }
 }
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image__new {
+    width: 30%;
+    left: 68%;
+  }
+}
 main .contener_restaurant .restaurant__vignettes__detail__image__new p {
   margin: 5%;
 }
 @media (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__image__new p {
     margin: 12%;
+  }
+}
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__image__new p {
+    margin: 9%;
   }
 }
 main .contener_restaurant .restaurant__vignettes__detail__footer {
@@ -454,6 +515,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer {
   align-items: center;
   padding-left: 1.6em;
   padding-right: 2.2em;
+}
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__footer {
+    font-size: 0.8em;
+  }
 }
 @media (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer__text h2 {
@@ -480,6 +546,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 }
 main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
   display: none;
+}
+@media (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
+    font-size: 1.6em;
+  }
 }
 
 @media (min-width: 767px) {
@@ -619,6 +690,16 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   flex-direction: column;
   justify-content: center;
   transition: width 2s ease-out;
+}
+@media (max-width: 400px) {
+  .menu__formulaire .contener_label label .menu__formulaire__detail {
+    max-width: 16em;
+  }
+}
+@media (min-width: 400px) and (max-width: 600px) {
+  .menu__formulaire .contener_label label .menu__formulaire__detail {
+    max-width: 18em;
+  }
 }
 @media (min-width: 767px) {
   .menu__formulaire .contener_label label .menu__formulaire__detail {

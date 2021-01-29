@@ -139,6 +139,14 @@
                     justify-content: center;
                     transition: width 2s ease-out;
 
+                    @media (max-width: 400px) {
+                        max-width: 16em;
+                    }
+
+                    @media (min-width: 400px) and (max-width: 600px) {
+                        max-width: 18em;
+                    }
+
                     @media (min-width: 767px) {
                         max-width: 16em;
                     }
