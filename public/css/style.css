@@ -121,7 +121,7 @@ footer {
 }
 @media (min-width: 767px) {
   footer {
-    margin-left: 41%;
+    margin-left: 40.5%;
   }
 }
 footer h1 {
@@ -136,6 +136,14 @@ footer p a i {
   min-width: 20px;
 }
 
+@keyframes affichageRalenti {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes rotateIcone {
   from {
     transform: rotate(180deg);
@@ -166,7 +174,7 @@ footer p a i {
 }
 @media (min-width: 767px) {
   main .aside_desktop {
-    width: 40%;
+    width: 40.5%;
     background-color: #F7F4F4;
     position: fixed;
   }
@@ -354,8 +362,14 @@ main .contener_restaurant {
 }
 @media (min-width: 767px) {
   main .contener_restaurant {
-    margin-left: 40%;
+    margin-left: 40.5%;
     padding-bottom: 0em;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  main .contener_restaurant .restaurant {
+    display: flex;
+    justify-content: space-between;
   }
 }
 main .contener_restaurant .restaurant h1 {
@@ -488,7 +502,13 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     font-size: 0.8em;
   }
   #aside_menu .entreprise__fonctionnement h1 {
-    font-size: 1.1em;
+    font-size: 1.65em;
+  }
+  #aside_menu .entreprise__fonctionnement ol {
+    font-size: 1.15em;
+  }
+  #aside_menu .entreprise__fonctionnement ol li {
+    margin-bottom: 1em;
   }
 }
 
@@ -500,7 +520,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 }
 @media (min-width: 767px) {
   .menu {
-    width: 58%;
+    width: 59%;
     margin-left: 41%;
     padding-top: 0px;
     font-size: 0.75em;
@@ -562,6 +582,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   flex-direction: column;
   text-transform: uppercase;
   margin: auto;
+  animation: affichageRalenti ease-in-out 2s;
 }
 .menu__formulaire hr {
   width: 10%;

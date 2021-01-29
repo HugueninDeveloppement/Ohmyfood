@@ -3,7 +3,7 @@
 
 #main_menu {
     @media (min-width: 767px) {
-        margin-top:90px;
+        margin-top: 90px;
     }
 }
 
@@ -19,13 +19,22 @@
 
     .entreprise__fonctionnement {
         @media (min-width: 767px) {
-                font-size:0.8em;
-                h1 {
-                    font-size:1.1em;
+            font-size: 0.8em;
+
+            h1 {
+                font-size: 1.65em;
+            }
+
+            ol {
+                font-size: 1.15em;
+
+                li{
+                    margin-bottom:1em;
                 }
             }
         }
     }
+}
 
 
 .menu {
@@ -35,7 +44,7 @@
     padding-top: 2em;
 
     @media (min-width: 767px) {
-        width: 58%;
+        width: 59%;
         margin-left: 41%;
         padding-top: 0px;
         font-size: 0.75em;
@@ -87,6 +96,7 @@
             flex-direction: column;
             text-transform: uppercase;
             margin: auto;
+            animation: affichageRalenti ease-in-out 2s;
         }
 
         hr {

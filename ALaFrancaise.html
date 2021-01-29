@@ -17,15 +17,26 @@
     </header>
 
     <main id="main_menu">
-        <div id="aside_menu"class="aside_desktop">
-            <div class="entreprise__fonctionnement">
-                <h1>Fonctionnement</h1>
-                <ol>
-                    <li><i class="fas fa-mobile-alt"></i><span>Choisissez un restaurant</span></li>
-                    <li><i class="fas fa-list-ul"></i><span>Composez votre menu</span></li>
-                    <li><i class="fas fa-store"></i><span>Dégustez au restaurant</span></li>
-                </ol>
-            </div>
+        <div id="aside_menu" class="aside_desktop">
+            <section class="localisation">
+            <input class="localisation__recherche" id="adresse" type="text" name="Ville_recherchee" placeholder="Paris,Belleville" />
+            <button class="localisation__button" id="adresse__recherche" name="recherche" type="submit"><i class="fas fa-map-marker-alt"></i></button>
+            </section>
+            <section class="entreprise">
+                <div class="entreprise__presentation">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <button id="presentation__button" name="restaurant_explorer">Explorer nos restaurants</button>
+                </div>
+                <div class="entreprise__fonctionnement">
+                    <h1>Fonctionnement</h1>
+                    <ol>
+                        <li><i class="fas fa-mobile-alt"></i><span>Choisissez un restaurant</span></li>
+                        <li><i class="fas fa-list-ul"></i><span>Composez votre menu</span></li>
+                        <li><i class="fas fa-store"></i><span>Dégustez au restaurant</span></li>
+                    </ol>
+                </div>
+            </section>
         </div>
         <div class="menu">
             <img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />

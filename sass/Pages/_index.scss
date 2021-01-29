@@ -9,7 +9,7 @@ main {
 
     .aside_desktop {
         @media (min-width: 767px) {
-            width: 40%;
+            width: 40.5%;
             background-color: $background-color;
             position: fixed;
         }
@@ -202,14 +202,17 @@ main {
         padding-bottom: 3em;
 
         @media (min-width: 767px) {
-            margin-left: 40%;
+            margin-left: 40.5%;
             padding-bottom: 0em;
         }
 
 
 
         .restaurant {
-
+            @media (min-width: 769px) and (max-width: 979px) {
+                display:flex;
+                justify-content:space-between;
+            }
 
             h1 {
                 padding-left: 0.9em;
