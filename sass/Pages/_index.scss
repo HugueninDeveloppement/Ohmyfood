@@ -22,7 +22,7 @@ main {
 
         @media (orientation: landscape) and (min-width: 767px) {
             position: relative;
-            background-color:white;
+            background-color: white;
         }
 
         @media (min-width: 1099px) {
@@ -261,6 +261,10 @@ main {
                     padding: 0.5em;
                 }
 
+                @media (min-width: 1200px) {
+                    justify-content: space-evenly;
+                }
+
                 &__detail {
                     border-radius: 25px;
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -268,6 +272,10 @@ main {
 
                     @media (min-width: 979px) {
                         width: 49%;
+                    }
+
+                    @media (min-width: 1200px) {
+                        width: 40%;
                     }
 
                     a {
@@ -289,6 +297,10 @@ main {
                             height: 210px;
                         }
 
+                        @media (min-width: 1200px) {
+                            height: 310px;
+                        }
+
 
                         img {
                             width: 100%;
@@ -303,6 +315,10 @@ main {
 
                             @media (min-width: 979px) {
                                 height: 210px;
+                            }
+
+                            @media (min-width: 1200px) {
+                                height: 310px;
                             }
                         }
 
@@ -329,6 +345,12 @@ main {
                                 width: 30%;
                                 left: 68%;
                                 height: 15%;
+                            }
+
+                            @media (min-width: 1200px) {
+                                width: 15%;
+                                left: 75%;
+                                height: 10%;
                             }
 
                             p {
@@ -378,7 +400,6 @@ main {
                             @media (min-width: 767px) {
                                 font-size: 1.6em;
                             }
-
                         }
                     }
                 }
