@@ -5,6 +5,8 @@
         @media (min-width: 767px) {
             background-image: $background-radiant-boby;
             width: 100%;
+            padding-top: 2em;
+            padding-bottom: 2em;
         }
     }
 
@@ -14,7 +16,10 @@
         display: flex;
         justify-content: center;
         padding: 1.6em;
-        margin-top: 70.4px;
+
+        @media (min-width: 767px) {
+            padding: 0px;
+        }
 
 
         &__form {
@@ -47,7 +52,7 @@
             h1 {
                 font-family: 'Shrikhand';
                 font-size: 1.4em;
-                border-bottom: 4px solid $background-color;
+                border-bottom: 4px solid $tretiary-color;
                 width: 100%;
                 margin: 0px;
                 margin-bottom: 1em;
@@ -76,9 +81,11 @@
             > div {
                 input {
                     width: 80%;
-                    padding: 0px;
-                    border: 1px solid black;
-                    min-height: 20px;
+                    padding: 0.3em 0em 0.3em 0.5em;
+                    border: 2px solid #FCFCF8;
+                    border-radius: 15px;
+                    box-shadow: $tretiary-color 0px 5px 15px;
+                    min-height: 25px;
 
 
                     @media (min-width: 767px) {
@@ -90,8 +97,10 @@
 
                 textarea {
                     width: 80%;
-                    padding: 0px;
-                    border: 1px solid black;
+                    padding: 0.3em 0em 0.3em 0.5em;
+                    border: 2px solid #FCFCF8;
+                    border-radius: 15px;
+                    box-shadow: $tretiary-color 0px 5px 15px;
                     min-height: 90px;
 
                     @media (min-width: 767px) {
@@ -100,20 +109,16 @@
                         min-height: 150px;
                     }
                 }
-
-                hr {
+                /* hr {
                     width: 37%;
                     background: $tretiary-color;
                     border: none;
                     height: 2px;
                     margin: 0em 0em 0.3em 0em;
-                }
-
-                .message ~ hr {
+                }*/
+                /*.message ~ hr {
                     width: 53%
-                }
-
-
+                }*/
                 input:focus {
                     background-color: lighten($primary-color,35%);
                 }
@@ -135,12 +140,18 @@
     }
 
     #footer_contact {
-        position: relative;
-        bottom: -35px;
 
         @media (min-width: 767px) {
-            width: 100%;
             margin-left: 0px;
+
+            h1, p {
+                margin: 0px;
+                padding: 0.5em 0em 0.5em 1em;
+            }
+        }
+
+        @media (min-width: 979px) {
+            padding:0em 0em 1em 0em;
         }
     }
 }

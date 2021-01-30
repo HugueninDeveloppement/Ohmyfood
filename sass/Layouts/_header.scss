@@ -9,7 +9,7 @@
         justify-content: center;
         align-content: center;
         padding: 1em 0em;
-        position: fixed;
+        position: sticky;
         top: 0;
         z-index: 3;
 
@@ -34,7 +34,7 @@
         padding: 1.2em 0em;
         box-shadow: 0 4px 2px -2px gray;
         background-color: white;
-        position: fixed;
+        position: sticky;
         top: 0;
         z-index: 4;
 
@@ -73,11 +73,15 @@
         }
 
         &__logo {
-            width:183px;
+            width: 183px;
+
+            @media (min-width: 410px) and (max-width:766px) {
+                margin: auto;
+            }
 
             @media (min-width: 767px) {
                 height: 40px;
-                width:300px;
+                width: 300px;
                 margin: auto;
             }
         }

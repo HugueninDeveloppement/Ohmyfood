@@ -7,10 +7,13 @@ footer {
         margin-left: 40.5%;
     }
 
-    @media (min-width: 979px) {
+    @media (min-width: 1099px) {
         margin-left: 32.5%;
     }
 
+    @media (orientation: landscape) and (min-width: 767px) {
+        margin-left: 0%;
+    }
 
     h1 {
         font-family: 'Shrikhand';

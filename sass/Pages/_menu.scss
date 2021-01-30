@@ -2,9 +2,7 @@
 }
 
 #main_menu {
-    @media (min-width: 767px) {
-        margin-top: 90px;
-    }
+    
 }
 
 
@@ -17,6 +15,7 @@
         background-color: none;
     }
 
+
     .entreprise__fonctionnement {
         @media (min-width: 767px) {
             font-size: 0.8em;
@@ -28,8 +27,8 @@
             ol {
                 font-size: 1.15em;
 
-                li{
-                    margin-bottom:1em;
+                li {
+                    margin-bottom: 1em;
                 }
             }
         }
@@ -48,6 +47,11 @@
         margin-left: 41%;
         padding-top: 0px;
         font-size: 0.75em;
+    }
+
+
+    @media (orientation: landscape) and (min-width: 767px) {
+        margin-left: 0%;
     }
 
     > img {

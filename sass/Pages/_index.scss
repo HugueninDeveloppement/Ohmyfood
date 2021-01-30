@@ -1,21 +1,27 @@
 main {
 
+
+
     @media (min-width: 767px) {
         display: flex;
         flex-direction: row;
         background-color: white;
-        margin-top: 4em;
     }
 
     .aside_desktop {
+
+        @media (orientation: landscape) and (min-device-width : 670px) {
+            position: relative;
+        }
+
         @media (min-width: 767px) {
             width: 40.5%;
             background-color: $background-color;
             position: fixed;
         }
 
-        @media (min-width: 979px) {
-            width: 32.5%;
+        @media (orientation: landscape) and (min-width: 767px) {
+            position: relative;
         }
 
         @media (min-width: 1099px) {
@@ -23,8 +29,6 @@ main {
             width: 25%;
             font-size: 0.8em;
         }
-
-
 
         .localisation {
             display: flex;
@@ -216,19 +220,18 @@ main {
             padding-bottom: 0em;
         }
 
-        @media (min-width: 979px) {
-            margin-left: 32.5%;
+        @media (orientation: landscape) and (min-width: 767px) {
+            margin-left: 0%;
         }
+
+
 
         @media (min-width: 1099px) {
             margin-left: 0px;
             width: 75%;
         }
 
-
-
         .restaurant {
-
 
             h1 {
                 padding-left: 0.9em;
@@ -243,7 +246,6 @@ main {
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 1.2em;
-
 
                 @media (min-width: 767px) {
                     padding-bottom: 0.2em;
@@ -324,6 +326,7 @@ main {
                             @media (min-width: 979px) {
                                 width: 30%;
                                 left: 68%;
+                                height: 15%;
                             }
 
                             p {
@@ -335,6 +338,7 @@ main {
 
                                 @media (min-width: 979px) {
                                     margin: 9%;
+                                    font-size: 0.75em;
                                 }
                             }
                         }
@@ -365,7 +369,6 @@ main {
                         }
 
                         &__hearth {
-
                             @include ajout-favori;
 
                             @media (min-width: 979px) {
