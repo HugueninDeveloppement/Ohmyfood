@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  font-family: "roboto";
   position: relative;
 }
 @media (min-width: 767px) {
@@ -137,10 +136,20 @@ footer {
 @media (orientation: landscape) and (min-width: 767px) {
   footer {
     margin-left: 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
   }
 }
 footer h1 {
   font-family: "Shrikhand";
+}
+@media (orientation: landscape) and (min-width: 767px) {
+  footer h1 {
+    width: 100%;
+    margin: 0.2em 0em;
+  }
 }
 footer p a {
   color: white;
@@ -149,6 +158,12 @@ footer p a {
 footer p a i {
   padding-right: 0.8em;
   min-width: 20px;
+}
+@media (orientation: landscape) and (min-width: 767px) {
+  footer p {
+    width: 50%;
+    margin: 0.2em 0em;
+  }
 }
 
 @keyframes affichageRalenti {
@@ -201,6 +216,7 @@ footer p a i {
 @media (orientation: landscape) and (min-width: 767px) {
   main .aside_desktop {
     position: relative;
+    background-color: white;
   }
 }
 @media (min-width: 1099px) {
@@ -563,7 +579,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
   display: none;
 }
-@media (min-width: 979px) {
+@media (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
     font-size: 1.6em;
   }
@@ -576,6 +592,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   #aside_menu {
     display: block;
     background-color: none;
+  }
+}
+@media (orientation: landscape) and (min-width: 767px) {
+  #aside_menu {
+    background-color: white;
   }
 }
 @media (min-width: 767px) {
@@ -597,12 +618,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   position: relative;
   z-index: 1;
   background: #fbfafa;
-  padding-top: 2em;
 }
 @media (min-width: 767px) {
   .menu {
-    width: 59%;
-    margin-left: 41%;
+    width: 60%;
+    margin-left: 40.5%;
     padding-top: 0px;
     font-size: 0.75em;
   }
@@ -610,6 +630,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 @media (orientation: landscape) and (min-width: 767px) {
   .menu {
     margin-left: 0%;
+    width: 60%;
   }
 }
 .menu > img {
@@ -935,6 +956,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 @media (min-width: 979px) {
   #body_contact #footer_contact {
     padding: 0em 0em 1em 0em;
+  }
+}
+@media (orientation: landscape) and (min-width: 767px) {
+  #body_contact #footer_contact {
+    justify-content: flex-start;
   }
 }
 

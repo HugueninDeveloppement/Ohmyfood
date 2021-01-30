@@ -15,6 +15,11 @@
         background-color: none;
     }
 
+    @media (orientation: landscape) and (min-width: 767px) {
+        background-color:white;
+    }
+
+
 
     .entreprise__fonctionnement {
         @media (min-width: 767px) {
@@ -40,11 +45,10 @@
     position: relative;
     z-index: 1;
     background: $background-color-light;
-    padding-top: 2em;
 
     @media (min-width: 767px) {
-        width: 59%;
-        margin-left: 41%;
+        width: 60%;
+        margin-left: 40.5%;
         padding-top: 0px;
         font-size: 0.75em;
     }
@@ -52,6 +56,11 @@
 
     @media (orientation: landscape) and (min-width: 767px) {
         margin-left: 0%;
+        width: 60%;
+    }
+
+
+    @media (min-width: 979px) {
     }
 
     > img {

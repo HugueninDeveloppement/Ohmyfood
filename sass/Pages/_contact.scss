@@ -151,7 +151,11 @@
         }
 
         @media (min-width: 979px) {
-            padding:0em 0em 1em 0em;
+            padding: 0em 0em 1em 0em;
+        }
+
+        @media (orientation: landscape) and (min-width: 767px) {
+            justify-content:flex-start;
         }
     }
 }

@@ -22,6 +22,7 @@ main {
 
         @media (orientation: landscape) and (min-width: 767px) {
             position: relative;
+            background-color:white;
         }
 
         @media (min-width: 1099px) {
@@ -83,6 +84,7 @@ main {
                 justify-content: space-between;
                 font-size: 0.75em;
             }
+
 
             &__presentation {
                 display: flex;
@@ -368,12 +370,15 @@ main {
                             }
                         }
 
+
+
                         &__hearth {
                             @include ajout-favori;
 
-                            @media (min-width: 979px) {
+                            @media (min-width: 767px) {
                                 font-size: 1.6em;
                             }
+
                         }
                     }
                 }

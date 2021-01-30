@@ -13,11 +13,24 @@ footer {
 
     @media (orientation: landscape) and (min-width: 767px) {
         margin-left: 0%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        padding:1em;
     }
+
 
     h1 {
         font-family: 'Shrikhand';
+
+        @media (orientation: landscape) and (min-width: 767px) {
+            width: 100%;
+            margin:0.2em 0em;
+
+        }
     }
+
+
 
     p {
 
@@ -29,6 +42,11 @@ footer {
                 padding-right: 0.8em;
                 min-width: 20px;
             }
+        }
+
+        @media (orientation: landscape) and (min-width: 767px) {
+            width: 50%;
+            margin:0.2em 0em;
         }
     }
 }
