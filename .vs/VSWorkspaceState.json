@@ -1,16 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\public\\css",
     "\\public\\police",
-    "\\sass",
     "\\sass\\Base",
     "\\sass\\Composants",
     "\\sass\\Layouts",
     "\\sass\\Pages",
     "\\sass\\Utils"
   ],
-  "SelectedNode": "\\sass\\Base\\_bases.scss",
+  "SelectedNode": "\\LaNoteEnchantee1.html",
   "PreviewInSolutionExplorer": false
 }
