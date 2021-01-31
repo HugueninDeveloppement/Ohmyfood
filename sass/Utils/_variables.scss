@@ -3,5 +3,7 @@ $background-color-light: lighten($background-color,2%);
 $primary-color: #9356dc;
 $secondary-color: #FF79DA;
 $tretiary-color: #99E2D0;
+$body_contact: darken($tretiary-color,35%);
 $background-radiant-button: -webkit-linear-gradient($secondary-color,$primary-color);
 $background-radiant-boby: -webkit-linear-gradient( $background-color-light,$background-color );
+$background-radiant-contact: -webkit-linear-gradient($body_contact,$tretiary-color );

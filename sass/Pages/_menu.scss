@@ -211,8 +211,13 @@
                                 max-width: 16em;
                             }
 
+                            @media (orientation: landscape) and (min-width: 767px) {
+                                min-width: 72%;
+                            }
+
                             @media (min-width: 1100px) {
-                                max-width: 18em;
+                                max-width: 22em;
+                                font-size: 0.85em;
                             }
                         }
 
