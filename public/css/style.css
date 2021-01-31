@@ -933,6 +933,29 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     padding: 0px;
   }
 }
+@media (min-width: 1100px) {
+  #body_contact .contact {
+    justify-content: space-evenly;
+  }
+}
+#body_contact .contact__icon {
+  display: none;
+}
+@media (min-width: 1100px) {
+  #body_contact .contact__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+  }
+}
+@media (min-width: 1100px) {
+  #body_contact .contact__icon i {
+    font-size: 14em;
+    color: #99E2D0;
+  }
+}
 #body_contact .contact__form {
   display: flex;
   flex-direction: column;
@@ -948,6 +971,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   #body_contact .contact__form {
     flex: none;
     width: 70%;
+  }
+}
+@media (min-width: 1100px) {
+  #body_contact .contact__form {
+    width: 50%;
   }
 }
 #body_contact .contact__form > div {
