@@ -721,19 +721,19 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 .menu__entete__label input[type=checkbox]:checked ~ #unchecked {
   display: none;
 }
+@media (min-width: 1200px) {
+  .menu #menu_a_la_francaise {
+    top: 0px;
+    background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+  }
+}
 .menu__formulaire {
   padding: 1em;
   background-color: #fbfafa;
   position: relative;
   top: -35px;
   flex: 1;
-}
-@media (min-width: 1200px) {
-  .menu__formulaire {
-    top: 0px;
-    background-image: url(C:/MAMP/htdocs/P3_Huguenin/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: cover;
-  }
 }
 @media (min-width: 1200px) {
   .menu__formulaire form {
@@ -753,7 +753,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 }
 @media (min-width: 1200px) {
   .menu__formulaire form fieldset {
-    width: 28%;
+    width: 42%;
     color: white;
   }
 }
@@ -914,6 +914,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   display: flex;
   justify-content: center;
   padding: 1.6em;
+  background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
 @media (min-width: 767px) {
   #body_contact .contact {

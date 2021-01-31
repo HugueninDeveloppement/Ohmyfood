@@ -107,18 +107,20 @@
         }
     }
 
+    #menu_a_la_francaise {
+        @media (min-width: 1200px) {
+            top: 0px;
+            background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+            background-size: cover;
+        }
+    }
+
     &__formulaire {
         padding: 1em;
         background-color: $background-color-light;
         position: relative;
         top: -35px;
         flex: 1;
-
-        @media (min-width: 1200px) {
-            top: 0px;
-            background-image: url(C:/MAMP/htdocs/P3_Huguenin/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-            background-size: cover;
-        }
 
 
         form {
@@ -139,7 +141,7 @@
                 animation: affichageRalenti ease-in-out 2s;
 
                 @media (min-width: 1200px) {
-                    width: 28%;
+                    width: 42%;
                     color: white;
                 }
 
