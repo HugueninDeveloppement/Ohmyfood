@@ -1,7 +1,7 @@
 /*bg generale (gris clair)*/
 $background-color: #F7F4F4;
 
-/*bg eclaircit pour option du radiant (gris très clair lumineux limite blanc,#fbfafa)*/
+/*bg eclaircit pour option du radiant (gris tres clair lumineux limite blanc,#fbfafa)*/
 $background-color-light: lighten($background-color,2%);
 
 /*couleur 2 pour radiant button (violet) et puce ronde des liste index*/
@@ -24,3 +24,29 @@ $background-radiant-boby: -webkit-linear-gradient( $background-color-light,$back
 
 /*radiant de couleur (gris/gris blanc) pour la page de contact */
 $background-radiant-contact: -webkit-linear-gradient($body_contact,$tretiary-color );
+
+
+/*Les beakpoints , le site est developpe en Mobile First les breakpoints commencent donc a 670 pour l'affichage landscape
+    et a 767 px l'affichage en portrait*/
+$breakpoints: (
+/*breakpoint correction affichage petit telephone max width 400px*/
+"petit-mobile": 400px,
+/*breakpoint grand portable*/
+"grand-mobile":979px,
+/*breakpoint petite tablette*/
+"petite-tablette":670px,
+/*breakpoint petite tablette et grand portable landscape*/
+"tablette":767px,
+/*breakpoint tablette*/
+"tablette-down":1099px,
+/*breakpoint grande tablette()ipad pro et + */
+"grande-tablette":1024px,
+/*breakpoint pour ecran large ,specifique affichage menu*/
+"ecran-large":1100px,
+/*breakpoint pour ecran large ,specifique affichage index*/
+"ecran-xlarge":1200px,
+/*breakpoint pour ecran extra large */
+"ecran-xxlarge":1400px
+    );
+
+$orientaion:landscape;

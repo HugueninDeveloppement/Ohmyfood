@@ -1,6 +1,6 @@
 main {
 
-    @media (min-width: 767px) {
+    @include media-min("tablette") {
         display: flex;
         flex-direction: row;
         background-color: white;
@@ -8,22 +8,22 @@ main {
 
     .aside_desktop {
 
-        @media (orientation: landscape) and (min-device-width : 670px) {
+        @include media-min-lanscape("petite-tablette",landscape) {
             position: relative;
         }
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             width: 40.5%;
             background-color: $background-color;
             position: fixed;
         }
 
-        @media (orientation: landscape) and (min-width: 767px) {
+        @include media-min-lanscape("tablette",landscape) {
             position: relative;
             background-color: white;
         }
 
-        @media (min-width: 1099px) {
+        @include media-min("tablette-down") {
             position: relative;
             width: 25%;
             font-size: 0.8em;
@@ -37,7 +37,7 @@ main {
             background-color: #f2f2f2;
             height: 50px;
 
-            @media (min-width: 767px) {
+            @include media-min("tablette-down") {
                 height: 100px;
                 justify-content: space-evenly;
             }
@@ -47,7 +47,7 @@ main {
                 width: 60%;
                 background-color: #f2f2f2;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     font-size: 1.2em;
                     padding-top: 0.3em;
                     width: 70%;
@@ -61,13 +61,13 @@ main {
                 justify-content: flex-end;
                 align-items: center;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     justify-content: flex-start;
                     width: 12%;
                 }
 
                 i {
-                    @media (min-width: 767px) {
+                    @include media-min("tablette") {
                         font-size: 2.5em;
                     }
                 }
@@ -76,7 +76,7 @@ main {
 
         .entreprise {
 
-            @media (min-width: 767px) {
+            @include media-min("tablette") {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -91,7 +91,7 @@ main {
                 padding: 1em 1.2em 2em 1.2em;
                 background-image: $background-radiant-boby;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     padding: 0em 0.2em;
                 }
 
@@ -100,7 +100,7 @@ main {
                     padding: 0.2em 1.7em 0.2em 1.7em;
                     font-size: 1.5em;
 
-                    @media (min-width: 767px) {
+                    @include media-min("tablette") {
                         padding: 0em 0.2em;
                     }
                 }
@@ -127,7 +127,7 @@ main {
                 flex-direction: column;
                 padding: 1.6em 1em 2em 1em;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     padding: 1em 0.2em;
                     background-color: white;
                     align-self: stretch;
@@ -136,7 +136,7 @@ main {
                 h1 {
                     padding-left: 1em;
 
-                    @media (min-width: 767px) {
+                    @include media-min("tablette") {
                         margin: 0.3em 0em;
                     }
                 }
@@ -149,7 +149,7 @@ main {
                     padding: 1em;
                     text-align: left;
 
-                    @media (min-width: 767px) {
+                    @include media-min("tablette") {
                         margin-top: 0px;
                     }
                 }
@@ -215,18 +215,16 @@ main {
         background-color: #f2f2f2;
         padding-bottom: 3em;
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             margin-left: 40.5%;
             padding-bottom: 0em;
         }
 
-        @media (orientation: landscape) and (min-width: 767px) {
+        @include media-min-lanscape("tablette",landscape) {
             margin-left: 0%;
         }
 
-
-
-        @media (min-width: 1099px) {
+        @include media-min("tablette-down") {
             margin-left: 0px;
             width: 75%;
         }
@@ -236,7 +234,7 @@ main {
             h1 {
                 padding-left: 0.9em;
 
-                @media (min-width: 979px) {
+                @include media-min("grand-mobile") {
                     text-align: center;
                 }
             }
@@ -247,19 +245,19 @@ main {
                 justify-content: space-between;
                 padding: 1.2em;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     padding-bottom: 0.2em;
                     font-size: 0.8em;
                 }
 
-                @media (min-width: 979px) {
+                @include media-min("grand-mobile") {
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     padding: 0.5em;
                 }
 
-                @media (min-width: 1200px) {
+                @include media-min("ecran-xlarge") {
                     justify-content: space-evenly;
                 }
 
@@ -268,11 +266,11 @@ main {
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     margin-bottom: 1.7em;
 
-                    @media (min-width: 979px) {
+                    @include media-min("grand-mobile") {
                         width: 49%;
                     }
 
-                    @media (min-width: 1200px) {
+                    @include media-min("ecran-xlarge") {
                         width: 40%;
                     }
 
@@ -287,15 +285,15 @@ main {
                         height: 160px;
                         position: relative;
 
-                        @media (min-width: 767px) {
+                        @include media-min("tablette") {
                             height: 240px;
                         }
 
-                        @media (min-width: 979px) {
+                        @include media-min("grand-mobile") {
                             height: 210px;
                         }
 
-                        @media (min-width: 1200px) {
+                        @include media-min("ecran-xlarge") {
                             height: 310px;
                         }
 
@@ -307,15 +305,15 @@ main {
                             z-index: 1;
                             border-radius: 25px 25px 0px 0px;
 
-                            @media (min-width: 767px) {
+                            @include media-min("tablette") {
                                 height: 240px;
                             }
 
-                            @media (min-width: 979px) {
+                            @include media-min("grand-mobile") {
                                 height: 210px;
                             }
 
-                            @media (min-width: 1200px) {
+                            @include media-min("ecran-xlarge") {
                                 height: 310px;
                             }
                         }
@@ -332,20 +330,20 @@ main {
                             color: darken($tretiary-color,40%);
                             background-color: $tretiary-color;
 
-                            @media (min-width: 767px) {
+                            @include media-min("tablette") {
                                 top: 30px;
                                 width: 28%;
                                 height: 22%;
                                 left: 64%;
                             }
 
-                            @media (min-width: 979px) {
+                            @include media-min("grand-mobile") {
                                 width: 30%;
                                 left: 68%;
                                 height: 15%;
                             }
 
-                            @media (min-width: 1100px) {
+                            @include media-min("ecran-large") {
                                 width: 17%;
                                 left: 75%;
                                 height: 10%;
@@ -354,11 +352,11 @@ main {
                             p {
                                 margin: 5%;
 
-                                @media (min-width: 767px) {
+                                @include media-min("tablette") {
                                     margin: 12%;
                                 }
 
-                                @media (min-width: 979px) {
+                                @include media-min("grand-mobile") {
                                     margin: 9%;
                                     font-size: 0.75em;
                                 }
@@ -374,11 +372,11 @@ main {
                         padding-left: 1.6em;
                         padding-right: 2.2em;
 
-                        @media (min-width: 979px) {
+                        @include media-min("grand-mobile") {
                             font-size: 0.8em;
                         }
 
-                        @media (min-width: 767px) {
+                        @include media-min("tablette") {
                             &__text {
                                 h2 {
                                     margin: 0.3em 0em 0.3em 0em;
@@ -395,7 +393,7 @@ main {
                         &__hearth {
                             @include ajout-favori;
 
-                            @media (min-width: 767px) {
+                            @include media-min("tablette") {
                                 font-size: 1.6em;
                             }
                         }

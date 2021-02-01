@@ -2,7 +2,7 @@
     background-image: $background-radiant-contact;
 
     #main_contact {
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             background-image: $background-radiant-contact;
             width: 100%;
             padding-top: 2em;
@@ -19,18 +19,18 @@
         background-image: $background-radiant-contact;
 
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             padding: 0px;
         }
 
-        @media (min-width: 1100px) {
+        @include media-min("tablette-down") {
             justify-content: space-around;
         }
 
         &__icon {
             display: none;
 
-            @media (min-width: 1100px) {
+            @include media-min("tablette-down") {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -39,7 +39,7 @@
             }
 
             i {
-                @media (min-width: 1100px) {
+                @include media-min("tablette-down") {
                     font-size: 12em;
                     background: -moz-linear-gradient(top, $tretiary-color 0%, $background-color 100%);
                     background: -webkit-linear-gradient(top, $tretiary-color 0%,$background-color 100%);
@@ -64,12 +64,12 @@
             border-radius: 25px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-            @media (min-width: 767px) {
+            @include media-min("tablette") {
                 flex: none;
                 width: 70%;
             }
 
-            @media (min-width: 1100px) {
+            @include media-min("tablette-down") {
                 width: 50%;
             }
 
@@ -80,7 +80,7 @@
                 width: 80%;
                 font-size: 1.5em;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     width: 80%;
                 }
             }
@@ -124,7 +124,7 @@
                     min-height: 25px;
 
 
-                    @media (min-width: 767px) {
+                    @include media-min("tablette") {
                         height: 50px;
                         font-size: 0.75em;
                     }
@@ -139,22 +139,13 @@
                     box-shadow: $tretiary-color 0px 5px 15px;
                     min-height: 90px;
 
-                    @media (min-width: 767px) {
+                    @include media-min("tablette") {
                         height: 50px;
                         font-size: 0.75em;
                         min-height: 150px;
                     }
                 }
-                /* hr {
-                    width: 37%;
-                    background: $tretiary-color;
-                    border: none;
-                    height: 2px;
-                    margin: 0em 0em 0.3em 0em;
-                }*/
-                /*.message ~ hr {
-                    width: 53%
-                }*/
+
                 input:focus {
                     background-color: lighten($primary-color,35%);
                 }
@@ -177,8 +168,9 @@
 
     #footer_contact {
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             margin-left: 0px;
+            padding: 0em 0em 1em 0em;
 
             h1, p {
                 margin: 0px;
@@ -186,11 +178,7 @@
             }
         }
 
-        @media (min-width: 979px) {
-            padding: 0em 0em 1em 0em;
-        }
-
-        @media (orientation: landscape) and (min-width: 767px) {
+        @include media-min-lanscape("tablette",landscape) {
             justify-content: flex-start;
         }
     }

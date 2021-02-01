@@ -13,7 +13,7 @@
         top: 0;
         z-index: 3;
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             height: 4em;
             padding: 0.2em 0em;
         }
@@ -22,7 +22,7 @@
     &__logo {
         height: 26px;
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             height: 70%;
             margin: auto;
         }
@@ -38,7 +38,7 @@
         top: 0;
         z-index: 4;
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             height: 3.2em;
             padding: 0.5em 0em 0em 0em;
         }
@@ -51,7 +51,7 @@
         align-items: center;
         padding: 0em 6em 0.3em 1.2em;
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             padding: 0.6em 4em 0.3em 1.2em;
         }
 
@@ -66,7 +66,7 @@
             > i {
                 font-size: 1.7em;
 
-                @media (min-width: 767px) {
+                @include media-min("tablette") {
                     font-size: 2.1em;
                 }
             }
@@ -75,11 +75,11 @@
         &__logo {
             width: 183px;
 
-            @media (min-width: 410px) and (max-width:766px) {
+            @include media-between ("petit-mobile","tablette") {
                 margin: auto;
             }
 
-            @media (min-width: 767px) {
+            @include media-min("tablette") {
                 height: 40px;
                 width: 300px;
                 margin: auto;

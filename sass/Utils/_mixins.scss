@@ -56,4 +56,50 @@
         opacity:1;
     }
 
-                     }
+}
+
+
+/* media avec min-width */
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        & {
+            @content;
+        }
+    }
+}
+
+/*media avec max-width */
+@mixin media-max($_key) {
+    @media screen and (max-width: map-get($breakpoints, $_key) - 1) {
+        & {
+            @content;
+        }
+    }
+}
+
+/* media avec min-width et max-width  */
+@mixin media-between($_keymin, $_keymax) {
+    @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: map-get($breakpoints, $_keymax) - 1) {
+        & {
+            @content;
+        }
+    }
+}
+
+/* at... */
+@mixin media($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) and (max-width: map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $_key) + 1)) - 1) {
+        & {
+            @content;
+        }
+    }
+}
+
+/*lanscape*/
+@mixin media-min-lanscape($_key,$orientation) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) and (orientation:$orientation) {
+        & {
+            @content;
+        }
+    }
+}

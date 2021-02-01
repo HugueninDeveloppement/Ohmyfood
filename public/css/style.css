@@ -29,143 +29,21 @@ body {
   font-family: "Shrikhand";
 }
 
-.header__principale {
-  width: 100%;
-  height: 2em;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  padding: 1em 0em;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-}
-@media (min-width: 767px) {
-  .header__principale {
-    height: 4em;
-    padding: 0.2em 0em;
-  }
-}
-.header__logo {
-  height: 26px;
-}
-@media (min-width: 767px) {
-  .header__logo {
-    height: 70%;
-    margin: auto;
-  }
-}
-.header__menu {
-  width: 100%;
-  height: 2em;
-  padding: 1.2em 0em;
-  box-shadow: 0 4px 2px -2px gray;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 4;
-}
-@media (min-width: 767px) {
-  .header__menu {
-    height: 3.2em;
-    padding: 0.5em 0em 0em 0em;
-  }
-}
-.header__formulaire {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0em 6em 0.3em 1.2em;
-}
-@media (min-width: 767px) {
-  .header__formulaire {
-    padding: 0.6em 4em 0.3em 1.2em;
-  }
-}
-.header__formulaire__buttonRetour {
-  border: none;
-  height: 30px;
-  background-color: white;
-}
-.header__formulaire__buttonRetour > i {
-  font-size: 1.7em;
-}
-@media (min-width: 767px) {
-  .header__formulaire__buttonRetour > i {
-    font-size: 2.1em;
-  }
-}
-.header__formulaire__logo {
-  width: 183px;
-}
-@media (min-width: 410px) and (max-width: 766px) {
-  .header__formulaire__logo {
-    margin: auto;
-  }
-}
-@media (min-width: 767px) {
-  .header__formulaire__logo {
-    height: 40px;
-    width: 300px;
-    margin: auto;
-  }
-}
-
 .button__retour {
   border: none;
 }
 
-footer {
-  padding: 2em;
-  background-color: #2D2929;
-  color: white;
-}
-@media (min-width: 767px) {
-  footer {
-    margin-left: 40.5%;
-  }
-}
-@media (min-width: 1099px) {
-  footer {
-    margin-left: 32.5%;
-  }
-}
-@media (orientation: landscape) and (min-width: 767px) {
-  footer {
-    margin-left: 0%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 1em;
-  }
-}
-footer h1 {
-  font-family: "Shrikhand";
-}
-@media (orientation: landscape) and (min-width: 767px) {
-  footer h1 {
-    width: 100%;
-    margin: 0.2em 0em;
-  }
-}
-footer p a {
-  color: white;
-  text-decoration: none;
-}
-footer p a i {
-  padding-right: 0.8em;
-  min-width: 20px;
-}
-@media (orientation: landscape) and (min-width: 767px) {
-  footer p {
-    width: 50%;
-    margin: 0.2em 0em;
-  }
-}
-
+/*bg generale (gris clair)*/
+/*bg eclaircit pour option du radiant (gris tres clair lumineux limite blanc,#fbfafa)*/
+/*couleur 2 pour radiant button (violet) et puce ronde des liste index*/
+/*couleur 1 pour radiant button (rose)*/
+/*couleur pour hr, titre fieldset et page de contact*/
+/*couleur tertiaire assombri pour radiant body page contact*/
+/*radiant de couleur (violet/rose) pour les buttons submit*/
+/*radiant de couleur (gris/gris blanc) pour les bodys */
+/*radiant de couleur (gris/gris blanc) pour la page de contact */
+/*Les beakpoints , le site est developpe en Mobile First les breakpoints commencent donc a 670 pour l'affichage landscape
+    et a 767 px l'affichage en portrait*/
 @keyframes affichageRalenti {
   0% {
     opacity: 0;
@@ -174,6 +52,11 @@ footer p a i {
     opacity: 1;
   }
 }
+/* media avec min-width */
+/*media avec max-width */
+/* media avec min-width et max-width  */
+/* at... */
+/*lanscape*/
 @keyframes rotateIcone {
   from {
     transform: rotate(180deg);
@@ -194,32 +77,32 @@ footer p a i {
     opacity: 1;
   }
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main {
     display: flex;
     flex-direction: row;
     background-color: white;
   }
 }
-@media (orientation: landscape) and (min-device-width: 670px) {
+@media screen and (min-width: 670px) and (orientation: landscape) {
   main .aside_desktop {
     position: relative;
   }
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop {
     width: 40.5%;
     background-color: #F7F4F4;
     position: fixed;
   }
 }
-@media (orientation: landscape) and (min-width: 767px) {
+@media screen and (min-width: 767px) and (orientation: landscape) {
   main .aside_desktop {
     position: relative;
     background-color: white;
   }
 }
-@media (min-width: 1099px) {
+@media screen and (min-width: 1099px) {
   main .aside_desktop {
     position: relative;
     width: 25%;
@@ -234,7 +117,7 @@ main .aside_desktop .localisation {
   background-color: #f2f2f2;
   height: 50px;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 1099px) {
   main .aside_desktop .localisation {
     height: 100px;
     justify-content: space-evenly;
@@ -245,7 +128,7 @@ main .aside_desktop .localisation__recherche {
   width: 60%;
   background-color: #f2f2f2;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .localisation__recherche {
     font-size: 1.2em;
     padding-top: 0.3em;
@@ -259,18 +142,18 @@ main .aside_desktop .localisation__button {
   justify-content: flex-end;
   align-items: center;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .localisation__button {
     justify-content: flex-start;
     width: 12%;
   }
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .localisation__button i {
     font-size: 2.5em;
   }
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .entreprise {
     display: flex;
     flex-direction: column;
@@ -285,7 +168,7 @@ main .aside_desktop .entreprise__presentation {
   padding: 1em 1.2em 2em 1.2em;
   background-image: -webkit-linear-gradient(#fbfafa, #F7F4F4);
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .entreprise__presentation {
     padding: 0em 0.2em;
   }
@@ -294,7 +177,7 @@ main .aside_desktop .entreprise__presentation h1 {
   padding: 0.2em 1.7em 0.2em 1.7em;
   font-size: 1.5em;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .entreprise__presentation h1 {
     padding: 0em 0.2em;
   }
@@ -327,7 +210,7 @@ main .aside_desktop .entreprise__fonctionnement {
   flex-direction: column;
   padding: 1.6em 1em 2em 1em;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .entreprise__fonctionnement {
     padding: 1em 0.2em;
     background-color: white;
@@ -337,7 +220,7 @@ main .aside_desktop .entreprise__fonctionnement {
 main .aside_desktop .entreprise__fonctionnement h1 {
   padding-left: 1em;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .entreprise__fonctionnement h1 {
     margin: 0.3em 0em;
   }
@@ -350,7 +233,7 @@ main .aside_desktop .entreprise__fonctionnement ol {
   padding: 1em;
   text-align: left;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .aside_desktop .entreprise__fonctionnement ol {
     margin-top: 0px;
   }
@@ -407,18 +290,18 @@ main .contener_restaurant {
   background-color: #f2f2f2;
   padding-bottom: 3em;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant {
     margin-left: 40.5%;
     padding-bottom: 0em;
   }
 }
-@media (orientation: landscape) and (min-width: 767px) {
+@media screen and (min-width: 767px) and (orientation: landscape) {
   main .contener_restaurant {
     margin-left: 0%;
   }
 }
-@media (min-width: 1099px) {
+@media screen and (min-width: 1099px) {
   main .contener_restaurant {
     margin-left: 0px;
     width: 75%;
@@ -427,7 +310,7 @@ main .contener_restaurant {
 main .contener_restaurant .restaurant h1 {
   padding-left: 0.9em;
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant h1 {
     text-align: center;
   }
@@ -438,13 +321,13 @@ main .contener_restaurant .restaurant__vignettes {
   justify-content: space-between;
   padding: 1.2em;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes {
     padding-bottom: 0.2em;
     font-size: 0.8em;
   }
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes {
     flex-direction: row;
     flex-wrap: wrap;
@@ -452,7 +335,7 @@ main .contener_restaurant .restaurant__vignettes {
     padding: 0.5em;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   main .contener_restaurant .restaurant__vignettes {
     justify-content: space-evenly;
   }
@@ -462,12 +345,12 @@ main .contener_restaurant .restaurant__vignettes__detail {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 1.7em;
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail {
     width: 49%;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   main .contener_restaurant .restaurant__vignettes__detail {
     width: 40%;
   }
@@ -482,17 +365,17 @@ main .contener_restaurant .restaurant__vignettes__detail__image {
   height: 160px;
   position: relative;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__image {
     height: 240px;
   }
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail__image {
     height: 210px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   main .contener_restaurant .restaurant__vignettes__detail__image {
     height: 310px;
   }
@@ -504,17 +387,17 @@ main .contener_restaurant .restaurant__vignettes__detail__image img {
   z-index: 1;
   border-radius: 25px 25px 0px 0px;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__image img {
     height: 240px;
   }
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail__image img {
     height: 210px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   main .contener_restaurant .restaurant__vignettes__detail__image img {
     height: 310px;
   }
@@ -531,7 +414,7 @@ main .contener_restaurant .restaurant__vignettes__detail__image__new {
   color: #278870;
   background-color: #99E2D0;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__image__new {
     top: 30px;
     width: 28%;
@@ -539,14 +422,14 @@ main .contener_restaurant .restaurant__vignettes__detail__image__new {
     left: 64%;
   }
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail__image__new {
     width: 30%;
     left: 68%;
     height: 15%;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   main .contener_restaurant .restaurant__vignettes__detail__image__new {
     width: 17%;
     left: 75%;
@@ -556,12 +439,12 @@ main .contener_restaurant .restaurant__vignettes__detail__image__new {
 main .contener_restaurant .restaurant__vignettes__detail__image__new p {
   margin: 5%;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__image__new p {
     margin: 12%;
   }
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail__image__new p {
     margin: 9%;
     font-size: 0.75em;
@@ -575,12 +458,12 @@ main .contener_restaurant .restaurant__vignettes__detail__footer {
   padding-left: 1.6em;
   padding-right: 2.2em;
 }
-@media (min-width: 979px) {
+@media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer {
     font-size: 0.8em;
   }
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer__text h2 {
     margin: 0.3em 0em 0.3em 0em;
   }
@@ -606,7 +489,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
   display: none;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
     font-size: 1.6em;
   }
@@ -615,18 +498,18 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 #aside_menu {
   display: none;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #aside_menu {
     display: block;
     background-color: none;
   }
 }
-@media (orientation: landscape) and (min-width: 767px) {
+@media screen and (min-width: 767px) and (orientation: landscape) {
   #aside_menu {
     background-color: white;
   }
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #aside_menu .entreprise__fonctionnement {
     font-size: 0.8em;
   }
@@ -646,7 +529,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   z-index: 1;
   background: #fbfafa;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   .menu {
     width: 60%;
     margin-left: 40.5%;
@@ -654,13 +537,13 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     font-size: 0.75em;
   }
 }
-@media (orientation: landscape) and (min-width: 767px) {
+@media screen and (min-width: 767px) and (orientation: landscape) {
   .menu {
     margin-left: 0%;
     width: 60%;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu {
     width: 100%;
     display: flex;
@@ -672,12 +555,12 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   height: 260px;
   width: 100%;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   .menu > img {
     height: 300px;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu > img {
     display: none;
   }
@@ -694,7 +577,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   top: -35px;
   z-index: 2;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu__entete {
     top: 0px;
     padding: 0em 2.8em 0em 2.8em;
@@ -721,28 +604,28 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 .menu__entete__label input[type=checkbox]:checked ~ #unchecked {
   display: none;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu #menu_a_la_francaise {
     top: 0px;
     background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
     background-size: cover;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu #menu_la_note_enchantee {
     top: 0px;
     background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
     background-size: cover;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu #menu_la_palette_du_gout {
     top: 0px;
     background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu #menu_le_delice_des_sens {
     top: 0px;
     background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -756,7 +639,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   top: -35px;
   flex: 1;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu__formulaire form {
     display: flex;
     flex-direction: row;
@@ -772,14 +655,14 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   margin: auto;
   animation: affichageRalenti ease-in-out 2s;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu__formulaire form fieldset {
     width: 42%;
     color: white;
     text-shadow: 1px 0px 1px #99E2D0, 0px 1px 1px black, 2px 1px 1px #99E2D0, 1px 2px 1px black, 3px 2px 1px #99E2D0, 2px 3px 1px black;
   }
 }
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .menu__formulaire form fieldset {
     width: 29%;
   }
@@ -791,7 +674,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   height: 2px;
   margin-left: 0em;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu__formulaire form fieldset hr {
     width: 25%;
   }
@@ -804,7 +687,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   margin-bottom: 0.6em;
   color: black;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
   .menu__formulaire form fieldset .contener_label {
     margin-bottom: 1.6em;
     text-shadow: none;
@@ -834,7 +717,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 }
 @media (max-width: 400px) {
   .menu__formulaire form fieldset .contener_label label .menu__formulaire__detail {
-    max-width: 16em;
+    max-width: 14.5em;
   }
 }
 @media (min-width: 400px) and (max-width: 600px) {
@@ -842,12 +725,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     max-width: 18em;
   }
 }
-@media (orientation: landscape) and (max-width: 767px) {
-  .menu__formulaire form fieldset .contener_label label .menu__formulaire__detail {
-    min-width: 72%;
-  }
-}
-@media (orientation: landscape) and (min-width: 767px) {
+@media (orientation: landscape) {
   .menu__formulaire form fieldset .contener_label label .menu__formulaire__detail {
     min-width: 72%;
   }
@@ -923,7 +801,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   align-content: center;
   margin-bottom: 1em;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1100px) and (orientation: landscape) {
   .menu__formulaire form .validation_commande {
     width: 100%;
   }
@@ -940,7 +818,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   color: white;
   margin-top: 0.8em;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (orientation: landscape) {
   .menu__formulaire form .validation_commande #button_commander {
     width: 15%;
     height: 45px;
@@ -951,7 +829,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 #body_contact {
   background-image: -webkit-linear-gradient(#2c9c81, #99E2D0);
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact #main_contact {
     background-image: -webkit-linear-gradient(#2c9c81, #99E2D0);
     width: 100%;
@@ -966,12 +844,12 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   padding: 1.6em;
   background-image: -webkit-linear-gradient(#2c9c81, #99E2D0);
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact .contact {
     padding: 0px;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1099px) {
   #body_contact .contact {
     justify-content: space-around;
   }
@@ -979,7 +857,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 #body_contact .contact__icon {
   display: none;
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1099px) {
   #body_contact .contact__icon {
     display: flex;
     flex-direction: column;
@@ -988,7 +866,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     width: 28%;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1099px) {
   #body_contact .contact__icon i {
     font-size: 12em;
     background: -moz-linear-gradient(top, #99E2D0 0%, #F7F4F4 100%);
@@ -1011,13 +889,13 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact .contact__form {
     flex: none;
     width: 70%;
   }
 }
-@media (min-width: 1100px) {
+@media screen and (min-width: 1099px) {
   #body_contact .contact__form {
     width: 50%;
   }
@@ -1028,7 +906,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   width: 80%;
   font-size: 1.5em;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact .contact__form > div {
     width: 80%;
   }
@@ -1056,18 +934,6 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   color: #99E2D0;
   padding-right: 0.5em;
 }
-#body_contact .contact__form > div {
-  /* hr {
-      width: 37%;
-      background: $tretiary-color;
-      border: none;
-      height: 2px;
-      margin: 0em 0em 0.3em 0em;
-  }*/
-  /*.message ~ hr {
-      width: 53%
-  }*/
-}
 #body_contact .contact__form > div input {
   width: 80%;
   padding: 0.3em 0em 0.3em 0.5em;
@@ -1076,7 +942,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   box-shadow: #99E2D0 0px 5px 15px;
   min-height: 25px;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact .contact__form > div input {
     height: 50px;
     font-size: 0.75em;
@@ -1090,7 +956,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   box-shadow: #99E2D0 0px 5px 15px;
   min-height: 90px;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact .contact__form > div textarea {
     height: 50px;
     font-size: 0.75em;
@@ -1118,23 +984,152 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   margin-top: 1em;
   height: 15%;
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   #body_contact #footer_contact {
     margin-left: 0px;
+    padding: 0em 0em 1em 0em;
   }
   #body_contact #footer_contact h1, #body_contact #footer_contact p {
     margin: 0px;
     padding: 0.5em 0em 0.5em 1em;
   }
 }
-@media (min-width: 979px) {
-  #body_contact #footer_contact {
-    padding: 0em 0em 1em 0em;
-  }
-}
-@media (orientation: landscape) and (min-width: 767px) {
+@media screen and (min-width: 767px) and (orientation: landscape) {
   #body_contact #footer_contact {
     justify-content: flex-start;
+  }
+}
+
+footer {
+  padding: 2em;
+  background-color: #2D2929;
+  color: white;
+}
+@media screen and (min-width: 767px) {
+  footer {
+    margin-left: 40.5%;
+  }
+}
+@media screen and (min-width: 1099px) {
+  footer {
+    margin-left: 32.5%;
+  }
+}
+@media screen and (min-width: 767px) and (orientation: landscape) {
+  footer {
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+}
+footer h1 {
+  font-family: "Shrikhand";
+}
+@media screen and (min-width: 767px) and (orientation: landscape) {
+  footer h1 {
+    width: 100%;
+    margin: 0.2em 0em;
+  }
+}
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+footer p a i {
+  padding-right: 0.8em;
+  min-width: 20px;
+}
+@media screen and (min-width: 767px) and (orientation: landscape) {
+  footer p {
+    width: 50%;
+    margin: 0.2em 0em;
+  }
+}
+
+.header__principale {
+  width: 100%;
+  height: 2em;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 1em 0em;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+@media screen and (min-width: 767px) {
+  .header__principale {
+    height: 4em;
+    padding: 0.2em 0em;
+  }
+}
+.header__logo {
+  height: 26px;
+}
+@media screen and (min-width: 767px) {
+  .header__logo {
+    height: 70%;
+    margin: auto;
+  }
+}
+.header__menu {
+  width: 100%;
+  height: 2em;
+  padding: 1.2em 0em;
+  box-shadow: 0 4px 2px -2px gray;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+@media screen and (min-width: 767px) {
+  .header__menu {
+    height: 3.2em;
+    padding: 0.5em 0em 0em 0em;
+  }
+}
+.header__formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 6em 0.3em 1.2em;
+}
+@media screen and (min-width: 767px) {
+  .header__formulaire {
+    padding: 0.6em 4em 0.3em 1.2em;
+  }
+}
+.header__formulaire__buttonRetour {
+  border: none;
+  height: 30px;
+  background-color: white;
+}
+.header__formulaire__buttonRetour > i {
+  font-size: 1.7em;
+}
+@media screen and (min-width: 767px) {
+  .header__formulaire__buttonRetour > i {
+    font-size: 2.1em;
+  }
+}
+.header__formulaire__logo {
+  width: 183px;
+}
+@media screen and (min-width: 400px) and (max-width: 766px) {
+  .header__formulaire__logo {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 767px) {
+  .header__formulaire__logo {
+    height: 40px;
+    width: 300px;
+    margin: auto;
   }
 }
 

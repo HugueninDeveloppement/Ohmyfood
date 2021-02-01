@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
+    "\\public\\css",
     "\\sass",
     "\\sass\\Base",
     "\\sass\\Composants",
@@ -8,6 +10,6 @@
     "\\sass\\Pages",
     "\\sass\\Utils"
   ],
-  "SelectedNode": "\\LeDeliceDesSens1.html",
+  "SelectedNode": "\\public\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }

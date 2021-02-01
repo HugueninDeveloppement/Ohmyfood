@@ -1,28 +1,20 @@
-#body_contact{
-}
-
-#main_menu {
-    
-}
-
-
 
 #aside_menu {
     display: none;
 
-    @media (min-width: 767px) {
+    @include media-min("tablette") {
         display: block;
         background-color: none;
     }
 
-    @media (orientation: landscape) and (min-width: 767px) {
-        background-color:white;
+    @include media-min-lanscape("tablette",landscape) {
+        background-color: white;
     }
 
 
 
     .entreprise__fonctionnement {
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             font-size: 0.8em;
 
             h1 {
@@ -46,7 +38,7 @@
     z-index: 1;
     background: $background-color-light;
 
-    @media (min-width: 767px) {
+    @include media-min("tablette") {
         width: 60%;
         margin-left: 40.5%;
         padding-top: 0px;
@@ -54,12 +46,12 @@
     }
 
 
-    @media (orientation: landscape) and (min-width: 767px) {
+    @include media-min-lanscape("tablette",landscape) {
         margin-left: 0%;
         width: 60%;
     }
 
-    @media (min-width: 1100px) {
+    @include media-min("ecran-large") {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -71,11 +63,11 @@
         height: 260px;
         width: 100%;
 
-        @media (min-width: 767px) {
+        @include media-min("tablette") {
             height: 300px;
         }
 
-        @media (min-width: 1100px) {
+        @include media-min("ecran-large") {
             display: none;
         }
     }
@@ -92,7 +84,7 @@
         top: -35px;
         z-index: 2;
 
-        @media (min-width: 1100px) {
+        @include media-min("ecran-large") {
             top: 0px;
             padding: 0em 2.8em 0em 2.8em;
         }
@@ -107,7 +99,7 @@
     }
 
     #menu_a_la_francaise {
-        @media (min-width: 1100px) {
+        @include media-min("ecran-large") {
             top: 0px;
             background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
             background-size: cover;
@@ -115,7 +107,7 @@
     }
 
     #menu_la_note_enchantee {
-        @media (min-width: 1100px) {
+        @include media-min("ecran-large") {
             top: 0px;
             background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
             background-size: cover;
@@ -123,7 +115,7 @@
     }
 
     #menu_la_palette_du_gout {
-        @media (min-width: 1100px) {
+        @include media-min("ecran-large") {
             top: 0px;
             background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
             background-size: cover;
@@ -131,7 +123,7 @@
     }
 
     #menu_le_delice_des_sens {
-        @media (min-width: 1100px) {
+        @include media-min("ecran-large") {
             top: 0px;
             background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
             background-size: cover;
@@ -148,7 +140,7 @@
 
 
         form {
-            @media (min-width: 1100px) {
+            @include media-min("ecran-large") {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -164,14 +156,14 @@
                 margin: auto;
                 animation: affichageRalenti ease-in-out 2s;
 
-                @media (min-width: 1100px) {
+                @include media-min("ecran-large") {
                     width: 42%;
                     color: white;
                     text-shadow: 1px 0px 1px $tretiary-color, 0px 1px 1px black, 2px 1px 1px $tretiary-color, 1px 2px 1px black, 3px 2px 1px $tretiary-color, 2px 3px 1px black;
                 }
 
 
-                @media (min-width: 1400px) {
+                @include media-min("ecran-xxlarge") {
                     width: 29%;
                 }
 
@@ -184,7 +176,7 @@
                     height: 2px;
                     margin-left: 0em;
 
-                    @media (min-width: 1100px) {
+                    @include media-min("ecran-large") {
                         width: 25%;
                     }
                 }
@@ -197,7 +189,7 @@
                     margin-bottom: 0.6em;
                     color: black;
 
-                    @media (min-width: 1100px) {
+                    @include media-min("ecran-large") {
                         margin-bottom: 1.6em;
                         text-shadow: none;
                     }
@@ -226,19 +218,14 @@
                             transition: width 2s ease-out;
 
                             @media (max-width: 400px) {
-                                max-width: 16em;
+                                max-width: 14.5em;
                             }
 
                             @media (min-width: 400px) and (max-width: 600px) {
                                 max-width: 18em;
                             }
 
-                            @media (orientation: landscape) and (max-width: 767px) {
-                                min-width: 72%;
-                            }
-
-
-                            @media (orientation: landscape) and (min-width: 767px) {
+                            @media (orientation: landscape) {
                                 min-width: 72%;
                             }
 
@@ -328,7 +315,7 @@
                 align-content: center;
                 margin-bottom: 1em;
 
-                @media (min-width: 1100px) {
+                @include media-min-lanscape("ecran-large",landscape) {
                     width: 100%;
                 }
 
@@ -336,7 +323,7 @@
                     margin: auto;
                     @include button-submit;
 
-                    @media (min-width: 1200px) {
+                    @include media-min-lanscape("ecran-xlarge",landscape) {
                         width: 15%;
                         height: 45px;
                         padding: 0em;

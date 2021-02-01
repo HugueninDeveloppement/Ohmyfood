@@ -3,30 +3,29 @@ footer {
     background-color: #2D2929;
     color: white;
 
-    @media (min-width: 767px) {
+    @include media-min("tablette") {
         margin-left: 40.5%;
     }
 
-    @media (min-width: 1099px) {
+    @include media-min("tablette-down") {
         margin-left: 32.5%;
     }
 
-    @media (orientation: landscape) and (min-width: 767px) {
+    @include media-min-lanscape("tablette",landscape) {
         margin-left: 0%;
         display: flex;
         justify-content: space-around;
-        flex-wrap:wrap;
-        padding:1em;
+        flex-wrap: wrap;
+        padding: 1em;
     }
 
 
     h1 {
         font-family: 'Shrikhand';
 
-        @media (orientation: landscape) and (min-width: 767px) {
+        @include media-min-lanscape("tablette",landscape) {
             width: 100%;
-            margin:0.2em 0em;
-
+            margin: 0.2em 0em;
         }
     }
 
@@ -44,9 +43,9 @@ footer {
             }
         }
 
-        @media (orientation: landscape) and (min-width: 767px) {
+        @include media-min-lanscape("tablette",landscape) {
             width: 50%;
-            margin:0.2em 0em;
+            margin: 0.2em 0em;
         }
     }
 }
