@@ -1,9 +1,26 @@
+/*bg generale (gris clair)*/
 $background-color: #F7F4F4;
+
+/*bg eclaircit pour option du radiant (gris très clair lumineux limite blanc,#fbfafa)*/
 $background-color-light: lighten($background-color,2%);
+
+/*couleur 2 pour radiant button (violet) et puce ronde des liste index*/
 $primary-color: #9356dc;
+
+/*couleur 1 pour radiant button (rose)*/
 $secondary-color: #FF79DA;
+
+/*couleur pour hr, titre fieldset et page de contact*/
 $tretiary-color: #99E2D0;
+
+/*couleur tertiaire assombri pour radiant body page contact*/
 $body_contact: darken($tretiary-color,35%);
+
+/*radiant de couleur (violet/rose) pour les buttons submit*/
 $background-radiant-button: -webkit-linear-gradient($secondary-color,$primary-color);
+
+/*radiant de couleur (gris/gris blanc) pour les bodys */
 $background-radiant-boby: -webkit-linear-gradient( $background-color-light,$background-color );
+
+/*radiant de couleur (gris/gris blanc) pour la page de contact */
 $background-radiant-contact: -webkit-linear-gradient($body_contact,$tretiary-color );
