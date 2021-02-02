@@ -1048,6 +1048,66 @@ footer p a i {
   }
 }
 
+.header {
+  /*&__menu {
+      width: 100%;
+      height: 2em;
+      padding: 1.2em 0em;
+      box-shadow: 0 4px 2px -2px gray;
+      background-color: white;
+      position: sticky;
+      top: 0;
+      z-index: 4;
+
+      @include media-min("tablette") {
+          height: 3.2em;
+          padding: 0.5em 0em 0em 0em;
+      }
+  }
+
+  &__formulaire {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0em 6em 0.3em 1.2em;
+
+      @include media-min("tablette") {
+          padding: 0.6em 4em 0.3em 1.2em;
+      }
+
+
+
+
+      &__buttonRetour {
+          border: none;
+          height: 30px;
+          background-color: white;
+
+          > i {
+              font-size: 1.7em;
+
+              @include media-min("tablette") {
+                  font-size: 2.1em;
+              }
+          }
+      }
+
+      &__logo {
+          width: 183px;
+
+          @include media-between ("petit-mobile","tablette") {
+              margin: auto;
+          }
+
+          @include media-min("tablette") {
+              height: 40px;
+              width: 300px;
+              margin: auto;
+          }
+      }
+  }*/
+}
 .header__principale {
   width: 100%;
   height: 2em;
@@ -1077,60 +1137,29 @@ footer p a i {
   }
 }
 .header__menu {
-  width: 100%;
-  height: 2em;
-  padding: 1.2em 0em;
-  box-shadow: 0 4px 2px -2px gray;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  z-index: 4;
-}
-@media screen and (min-width: 767px) {
-  .header__menu {
-    height: 3.2em;
-    padding: 0.5em 0em 0em 0em;
-  }
-}
-.header__formulaire {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0em 6em 0.3em 1.2em;
 }
-@media screen and (min-width: 767px) {
-  .header__formulaire {
-    padding: 0.6em 4em 0.3em 1.2em;
-  }
+.header__menu__retour {
+  text-decoration: none;
+  width: 10%;
+  text-align: center;
 }
-.header__formulaire__buttonRetour {
-  border: none;
-  height: 30px;
-  background-color: white;
+.header__menu__retour i {
+  color: black;
 }
-.header__formulaire__buttonRetour > i {
-  font-size: 1.7em;
+.header__menu__logo {
+  height: 2.8em;
+  width: 90%;
+  display: flex;
+  justify-items: center;
+  align-content: center;
 }
-@media screen and (min-width: 767px) {
-  .header__formulaire__buttonRetour > i {
-    font-size: 2.1em;
-  }
-}
-.header__formulaire__logo {
-  width: 183px;
-}
-@media screen and (min-width: 400px) and (max-width: 766px) {
-  .header__formulaire__logo {
-    margin: auto;
-  }
-}
-@media screen and (min-width: 767px) {
-  .header__formulaire__logo {
-    height: 40px;
-    width: 300px;
-    margin: auto;
-  }
+.header__menu__logo img {
+  width: 30%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

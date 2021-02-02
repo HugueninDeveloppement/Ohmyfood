@@ -27,8 +27,7 @@
             margin: auto;
         }
     }
-
-    &__menu {
+    /*&__menu {
         width: 100%;
         height: 2em;
         padding: 1.2em 0em;
@@ -82,6 +81,38 @@
             @include media-min("tablette") {
                 height: 40px;
                 width: 300px;
+                margin: auto;
+            }
+        }
+    }*/
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__retour {
+            text-decoration: none;
+            width: 10%;
+            text-align: center;
+
+            i {
+                color: black;
+            }
+        }
+
+
+        &__logo {
+            height: 2.8em;
+            width: 90%;
+            display: flex;
+            justify-items: center;
+            align-content: center;
+
+
+
+            img {
+                width: 30%;
                 margin: auto;
             }
         }
