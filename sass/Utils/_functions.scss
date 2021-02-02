@@ -32,4 +32,45 @@
     }
 }
 
+@keyframes rebonds {
+    to{
+        width:20px;
+        height:20px;
+        z-index:5;
+        transform:translate3d(0,-20px,0);
+    }
+}
+
+@keyframes spinnerloading{
+    0% {
+        opacity: 0;
+        
+    }
+
+    12% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    82% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        z-index:-1;
+    }
+    }
+
 

@@ -94,7 +94,19 @@
         }
 
         &__label {
-            @include ajout-favori
+            @include ajout-favori ;
+            :hover ~ #checked {
+                display: inline-block;
+                transform: scale(1.1);
+                animation: fondu 2s forwards;
+                background: $background-radiant-button;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            :hover ~ #unchecked {
+                display: none;
+            }
         }
     }
 
@@ -330,7 +342,6 @@
 
                 #button_commander {
                     margin: auto;
-                    @include button-submit;
 
                     @include media-min-lanscape("ecran-xlarge",landscape) {
                         width: 15%;

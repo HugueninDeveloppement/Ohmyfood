@@ -35,18 +35,6 @@
 }
 
 
-@mixin button-submit {
-    width: 60%;
-    font-size: 1em;
-    align-self: center;
-    padding: 1.4em;
-    background: $background-radiant-button;
-    border: none;
-    border-radius: 35px;
-    color: white;
-    margin-top: 0.8em;
-}
-
 /* media avec min-width */
 @mixin media-min($_key) {
     @media screen and (min-width: map-get($breakpoints, $_key)) {
@@ -56,14 +44,6 @@
     }
 }
 
-/*media avec max-width */
-@mixin media-max($_key) {
-    @media screen and (max-width: map-get($breakpoints, $_key) - 1) {
-        & {
-            @content;
-        }
-    }
-}
 
 /* media avec min-width et max-width  */
 @mixin media-between($_keymin, $_keymax) {
@@ -74,14 +54,6 @@
     }
 }
 
-/* at... */
-@mixin media($_key) {
-    @media screen and (min-width: map-get($breakpoints, $_key)) and (max-width: map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $_key) + 1)) - 1) {
-        & {
-            @content;
-        }
-    }
-}
 
 /*lanscape*/
 @mixin media-min-lanscape($_key,$orientation) {
