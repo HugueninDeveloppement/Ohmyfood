@@ -75,13 +75,14 @@ body {
   to {
     width: 20px;
     height: 20px;
-    z-index: 5;
+    z-index: 9999;
     transform: translate3d(0, -20px, 0);
   }
 }
 @keyframes spinnerloading {
   0% {
-    opacity: 0;
+    opacity: 1;
+    z-index: 9000;
   }
   12% {
     opacity: 1;
@@ -116,7 +117,7 @@ body .body__spinner {
   top: 0;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 4;
   animation: spinnerloading linear 5s forwards;
 }
@@ -128,7 +129,7 @@ body .body__spinner span {
   border-radius: 50%;
   margin: 0 8px;
   transform: translate3d(0);
-  animation: rebonds 0.6s infinite alternate;
+  animation: rebonds 0.6s 7 alternate;
 }
 body .body__spinner span:nth-child(2) {
   background-color: #FF79DA;
