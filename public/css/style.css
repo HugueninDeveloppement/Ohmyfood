@@ -94,10 +94,10 @@ body {
     opacity: 1;
   }
   75% {
-    opacity: 1;
+    opacity: 0.8;
   }
   82% {
-    opacity: 1;
+    opacity: 0.65;
   }
   100% {
     opacity: 0;
@@ -200,6 +200,7 @@ main .aside_desktop .localisation__button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #f2f2f2;
 }
 @media screen and (min-width: 767px) {
   main .aside_desktop .localisation__button {

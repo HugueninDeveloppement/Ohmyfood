@@ -85,6 +85,7 @@ main {
                 width: 60%;
                 background-color: #f2f2f2;
 
+
                 @include media-min("tablette") {
                     font-size: 1.2em;
                     padding-top: 0.3em;
@@ -98,6 +99,7 @@ main {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+                background-color: #f2f2f2;
 
                 @include media-min("tablette") {
                     justify-content: flex-start;
