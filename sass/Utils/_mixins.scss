@@ -47,18 +47,6 @@
     margin-top: 0.8em;
 }
 
-@keyframes affichageRalenti{
-    0%{
-        opacity:0;
-    }
-
-    to {
-        opacity:1;
-    }
-
-}
-
-
 /* media avec min-width */
 @mixin media-min($_key) {
     @media screen and (min-width: map-get($breakpoints, $_key)) {

@@ -44,14 +44,6 @@ body {
 /*radiant de couleur (gris/gris blanc) pour la page de contact */
 /*Les beakpoints , le site est developpe en Mobile First les breakpoints commencent donc a 670 pour l'affichage landscape
     et a 767 px l'affichage en portrait*/
-@keyframes affichageRalenti {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* media avec min-width */
 /*media avec max-width */
 /* media avec min-width et max-width  */
@@ -71,6 +63,14 @@ body {
 }
 @keyframes fondu {
   from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes affichageRalenti {
+  0% {
     opacity: 0;
   }
   to {
@@ -653,7 +653,8 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   flex-direction: column;
   text-transform: uppercase;
   margin: auto;
-  animation: affichageRalenti ease-in-out 2s;
+  opacity: 0;
+  animation: affichageRalenti ease-in-out 2.15s forwards;
 }
 @media screen and (min-width: 1100px) {
   .menu__formulaire form fieldset {
@@ -793,6 +794,12 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 .menu__formulaire form fieldset .contener_label label .menu__formulaire__input:checked ~ label .menu__formulaire__prix {
   max-width: 4em;
 }
+.menu__formulaire form fieldset:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.menu__formulaire form fieldset:nth-child(3) {
+  animation-delay: 1.5s;
+}
 .menu__formulaire form .validation_commande {
   display: flex;
   flex-direction: row;
@@ -929,6 +936,12 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 }
 #body_contact .contact__form__label label {
   text-align: left;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 1099px) {
+  #body_contact .contact__form__label label {
+    font-size: 0.75em;
+  }
 }
 #body_contact .contact__form__label label i {
   color: #99E2D0;
@@ -1048,66 +1061,6 @@ footer p a i {
   }
 }
 
-.header {
-  /*&__menu {
-      width: 100%;
-      height: 2em;
-      padding: 1.2em 0em;
-      box-shadow: 0 4px 2px -2px gray;
-      background-color: white;
-      position: sticky;
-      top: 0;
-      z-index: 4;
-
-      @include media-min("tablette") {
-          height: 3.2em;
-          padding: 0.5em 0em 0em 0em;
-      }
-  }
-
-  &__formulaire {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0em 6em 0.3em 1.2em;
-
-      @include media-min("tablette") {
-          padding: 0.6em 4em 0.3em 1.2em;
-      }
-
-
-
-
-      &__buttonRetour {
-          border: none;
-          height: 30px;
-          background-color: white;
-
-          > i {
-              font-size: 1.7em;
-
-              @include media-min("tablette") {
-                  font-size: 2.1em;
-              }
-          }
-      }
-
-      &__logo {
-          width: 183px;
-
-          @include media-between ("petit-mobile","tablette") {
-              margin: auto;
-          }
-
-          @include media-min("tablette") {
-              height: 40px;
-              width: 300px;
-              margin: auto;
-          }
-      }
-  }*/
-}
 .header__principale {
   width: 100%;
   height: 2em;
@@ -1145,6 +1098,12 @@ footer p a i {
   top: 0;
   background-color: white;
   z-index: 3;
+}
+@media screen and (min-width: 767px) {
+  .header__menu {
+    height: 4em;
+    padding: 0.2em 0em;
+  }
 }
 .header__menu__retour {
   text-decoration: none;
