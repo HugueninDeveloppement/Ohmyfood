@@ -1141,6 +1141,10 @@ footer p a i {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 3;
 }
 .header__menu__retour {
   text-decoration: none;
@@ -1159,7 +1163,7 @@ footer p a i {
 }
 .header__menu__logo img {
   width: 30%;
-  margin: auto;
+  margin: auto auto auto 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
