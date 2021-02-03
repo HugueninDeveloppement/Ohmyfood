@@ -5,11 +5,10 @@
     "\\public\\css",
     "\\sass",
     "\\sass\\Base",
-    "\\sass\\Composants",
-    "\\sass\\Layouts",
+    "\\sass\\Mise en pages",
     "\\sass\\Pages",
     "\\sass\\Utils"
   ],
-  "SelectedNode": "\\sass\\main.scss",
+  "SelectedNode": "\\sass\\Mise en pages\\_bouton.scss",
   "PreviewInSolutionExplorer": false
 }
