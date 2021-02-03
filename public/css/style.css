@@ -119,7 +119,7 @@ body .body__spinner {
   width: 100%;
   height: 100vh;
   z-index: 4;
-  animation: spinnerloading linear 5s forwards;
+  animation: spinnerloading linear 3s forwards;
 }
 body .body__spinner span {
   display: inline-block;
@@ -129,7 +129,7 @@ body .body__spinner span {
   border-radius: 50%;
   margin: 0 8px;
   transform: translate3d(0);
-  animation: rebonds 0.6s 7 alternate;
+  animation: rebonds 0.6s 6 alternate;
 }
 body .body__spinner span:nth-child(2) {
   background-color: #FF79DA;
@@ -524,10 +524,10 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
   font-size: 1.8em;
   cursor: pointer;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox], main .contener_restaurant .restaurant__vignettes__detail__footer__hearth #checked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox], main .contener_restaurant .restaurant__vignettes__detail__footer__hearth i.fas.fa-heart {
   display: none;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #checked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ i.fas.fa-heart {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
@@ -535,7 +535,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ #unchecked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[type=checkbox]:checked ~ i.far.fa-heart {
   display: none;
 }
 @media screen and (min-width: 767px) {
@@ -543,7 +543,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     font-size: 1.6em;
   }
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ #checked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ i.fas.fa-heart {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
@@ -551,7 +551,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ #unchecked {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ i.far.fa-heart {
   display: none;
 }
 
@@ -650,10 +650,10 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover 
   font-size: 1.8em;
   cursor: pointer;
 }
-.menu__entete__label input[type=checkbox], .menu__entete__label #checked {
+.menu__entete__label input[type=checkbox], .menu__entete__label i.fas.fa-heart {
   display: none;
 }
-.menu__entete__label input[type=checkbox]:checked ~ #checked {
+.menu__entete__label input[type=checkbox]:checked ~ i.fas.fa-heart {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
@@ -661,7 +661,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu__entete__label input[type=checkbox]:checked ~ #unchecked {
+.menu__entete__label input[type=checkbox]:checked ~ i.far.fa-heart {
   display: none;
 }
 .menu__entete__label :hover ~ #checked {

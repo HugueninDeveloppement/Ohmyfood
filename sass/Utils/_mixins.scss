@@ -4,20 +4,20 @@
 
 
 
-    input[type="checkbox"], #checked {
+    input[type="checkbox"], i.fas.fa-heart {
         display: none;
     }
 
-    input[type="checkbox"]:checked ~ #checked {
+    input[type="checkbox"]:checked ~ i.fas.fa-heart {
         display: inline-block;
-        transform:scale(1.1);
+        transform: scale(1.1);
         animation: fondu 2s forwards;
         background: $background-radiant-button;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    input[type="checkbox"]:checked ~ #unchecked {
+    input[type="checkbox"]:checked ~ i.far.fa-heart {
         display: none;
     }
 }
