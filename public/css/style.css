@@ -510,25 +510,25 @@ main .contener_restaurant .restaurant__vignettes__detail__footer {
     padding-right: 0.6em;
   }
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__text a {
+main .contener_restaurant .restaurant__vignettes__detail__footer a {
   text-decoration: none;
   color: black;
   font-size: 1.1em;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__text a h3 {
+main .contener_restaurant .restaurant__vignettes__detail__footer__text h3 {
   margin: 0.3em 0em 0.5em 0em;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__text a p {
+main .contener_restaurant .restaurant__vignettes__detail__footer__text p {
   margin: 0.5em 0em 0.3em 0em;
 }
 @media screen and (min-width: 767px) {
-  main .contener_restaurant .restaurant__vignettes__detail__footer__text a {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text {
     font-size: 0.9em;
   }
-  main .contener_restaurant .restaurant__vignettes__detail__footer__text a h3 {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text h3 {
     margin: 0.3em 0em 0.3em 0em;
   }
-  main .contener_restaurant .restaurant__vignettes__detail__footer__text a p {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text p {
     margin: 0.3em 0em 0.3em 0em;
   }
 }
