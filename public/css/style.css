@@ -233,12 +233,12 @@ main .aside_desktop .entreprise__presentation {
     padding: 0em 0.2em;
   }
 }
-main .aside_desktop .entreprise__presentation h1 {
+main .aside_desktop .entreprise__presentation h2 {
   padding: 0.2em 1.7em 0.2em 1.7em;
   font-size: 1.5em;
 }
 @media screen and (min-width: 767px) {
-  main .aside_desktop .entreprise__presentation h1 {
+  main .aside_desktop .entreprise__presentation h2 {
     padding: 0em 0.2em;
   }
 }
@@ -266,11 +266,11 @@ main .aside_desktop .entreprise__fonctionnement {
     align-self: stretch;
   }
 }
-main .aside_desktop .entreprise__fonctionnement h1 {
+main .aside_desktop .entreprise__fonctionnement h2 {
   padding-left: 1em;
 }
 @media screen and (min-width: 767px) {
-  main .aside_desktop .entreprise__fonctionnement h1 {
+  main .aside_desktop .entreprise__fonctionnement h2 {
     margin: 0.3em 0em;
   }
 }
@@ -356,11 +356,11 @@ main .contener_restaurant {
     width: 75%;
   }
 }
-main .contener_restaurant .restaurant h1 {
+main .contener_restaurant .restaurant h2 {
   padding-left: 0.9em;
 }
 @media screen and (min-width: 979px) {
-  main .contener_restaurant .restaurant h1 {
+  main .contener_restaurant .restaurant h2 {
     text-align: center;
   }
 }
@@ -403,10 +403,6 @@ main .contener_restaurant .restaurant__vignettes__detail {
   main .contener_restaurant .restaurant__vignettes__detail {
     width: 40%;
   }
-}
-main .contener_restaurant .restaurant__vignettes__detail a {
-  text-decoration: none;
-  color: black;
 }
 main .contener_restaurant .restaurant__vignettes__detail__image {
   width: 100%;
@@ -509,14 +505,30 @@ main .contener_restaurant .restaurant__vignettes__detail__footer {
 }
 @media screen and (min-width: 979px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer {
-    font-size: 0.8em;
+    font-size: 1.2em;
+    padding-left: 0.3em;
+    padding-right: 0.6em;
   }
 }
+main .contener_restaurant .restaurant__vignettes__detail__footer__text a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+main .contener_restaurant .restaurant__vignettes__detail__footer__text a h3 {
+  margin: 0.3em 0em 0.5em 0em;
+}
+main .contener_restaurant .restaurant__vignettes__detail__footer__text a p {
+  margin: 0.5em 0em 0.3em 0em;
+}
 @media screen and (min-width: 767px) {
-  main .contener_restaurant .restaurant__vignettes__detail__footer__text h2 {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text a {
+    font-size: 0.9em;
+  }
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text a h3 {
     margin: 0.3em 0em 0.3em 0em;
   }
-  main .contener_restaurant .restaurant__vignettes__detail__footer__text p {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__text a p {
     margin: 0.3em 0em 0.3em 0em;
   }
 }
@@ -541,6 +553,11 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
 @media screen and (min-width: 767px) {
   main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
     font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 979px) {
+  main .contener_restaurant .restaurant__vignettes__detail__footer__hearth {
+    font-size: 1.2em;
   }
 }
 main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ i.fas.fa-heart {

@@ -136,7 +136,7 @@ main {
                 }
 
 
-                h1 {
+                h2 {
                     padding: 0.2em 1.7em 0.2em 1.7em;
                     font-size: 1.5em;
 
@@ -172,7 +172,7 @@ main {
                     align-self: stretch;
                 }
 
-                h1 {
+                h2 {
                     padding-left: 1em;
 
                     @include media-min("tablette") {
@@ -270,7 +270,7 @@ main {
 
         .restaurant {
 
-            h1 {
+            h2 {
                 padding-left: 0.9em;
 
                 @include media-min("grand-mobile") {
@@ -313,10 +313,7 @@ main {
                         width: 40%;
                     }
 
-                    a {
-                        text-decoration: none;
-                        color: black;
-                    }
+
 
                     &__image {
                         width: 100%;
@@ -412,12 +409,29 @@ main {
                         padding-right: 2.2em;
 
                         @include media-min("grand-mobile") {
-                            font-size: 0.8em;
+                            font-size: 1.2em;
+                            padding-left: 0.3em;
+                            padding-right: 0.6em;
                         }
 
-                        @include media-min("tablette") {
-                            &__text {
-                                h2 {
+
+                        &__text a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 1.1em;
+
+                            h3 {
+                                margin: 0.3em 0em 0.5em 0em;
+                            }
+
+                            p {
+                                margin: 0.5em 0em 0.3em 0em;
+                            }
+
+                            @include media-min("tablette") {
+                                font-size: 0.9em;
+
+                                h3 {
                                     margin: 0.3em 0em 0.3em 0em;
                                 }
 
@@ -434,6 +448,10 @@ main {
 
                             @include media-min("tablette") {
                                 font-size: 1.6em;
+                            }
+
+                            @include media-min("grand-mobile") {
+                                font-size: 1.2em;
                             }
 
                             :hover ~ i.fas.fa-heart {
