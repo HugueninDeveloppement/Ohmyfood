@@ -560,7 +560,10 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth input[t
     font-size: 1.2em;
   }
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ i.fas.fa-heart {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth__label .menu__entete__checkbox {
+  width: 18%;
+}
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth__label .menu__entete__checkbox :hover ~ i.fas.fa-heart {
   display: inline-block;
   transform: scale(1.1);
   animation: fondu 2s forwards;
@@ -568,7 +571,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-main .contener_restaurant .restaurant__vignettes__detail__footer__hearth :hover ~ i.far.fa-heart {
+main .contener_restaurant .restaurant__vignettes__detail__footer__hearth__label .menu__entete__checkbox :hover ~ i.far.fa-heart {
   display: none;
 }
 

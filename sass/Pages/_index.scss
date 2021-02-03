@@ -456,17 +456,21 @@ main {
                                 font-size: 1.2em;
                             }
 
-                            :hover ~ i.fas.fa-heart {
-                                display: inline-block;
-                                transform: scale(1.1);
-                                animation: fondu 2s forwards;
-                                background: $background-radiant-button;
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                            }
+                            &__label .menu__entete__checkbox {
+                                width: 18%;
 
-                            :hover ~ i.far.fa-heart {
-                                display: none;
+                                :hover ~ i.fas.fa-heart {
+                                    display: inline-block;
+                                    transform: scale(1.1);
+                                    animation: fondu 2s forwards;
+                                    background: $background-radiant-button;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                }
+
+                                :hover ~ i.far.fa-heart {
+                                    display: none;
+                                }
                             }
                         }
                     }
