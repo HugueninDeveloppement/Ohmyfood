@@ -962,7 +962,6 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth__label 
     background: linear-gradient(to bottom, #99E2D0 0%, #F7F4F4 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
