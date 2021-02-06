@@ -4,7 +4,7 @@
 
     @include media-min("tablette") {
         display: block;
-        background-color: none;
+        background-color: transparent;
     }
 
     @include media-min-lanscape("tablette",landscape) {

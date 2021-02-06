@@ -16,11 +16,10 @@ body {
   font-family: "Roboto";
   src: url("../police/roboto/Roboto-Regular.ttf") format("truetype");
 }
-font-face {
+@font-face {
   font-family: "RobotoThin";
   src: url("../police/roboto/Roboto-Thin.ttf") format("truetype");
 }
-
 body {
   font-family: "Roboto", "Times New Roman", Times, serif;
 }
@@ -128,7 +127,7 @@ body .body__spinner span {
   height: 16px;
   border-radius: 50%;
   margin: 0 8px;
-  transform: translate3d(0);
+  transform: translate3d(0, 0, 0);
   animation: rebonds 0.6s 6 alternate;
 }
 body .body__spinner span:nth-child(2) {
@@ -581,7 +580,7 @@ main .contener_restaurant .restaurant__vignettes__detail__footer__hearth__label 
 @media screen and (min-width: 767px) {
   #aside_menu {
     display: block;
-    background-color: none;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 767px) and (orientation: landscape) {
